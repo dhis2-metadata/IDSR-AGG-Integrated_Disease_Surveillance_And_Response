@@ -1,0 +1,279 @@
+{
+  "export": [
+    {
+      "_basePath": "../IDSR/",
+      "_code": "IDSR-WND", 
+      "_name": "IDSR with no disaggregations", 
+      "_prefix": "",
+      "_ownership": {
+        "modeOwner": "OVERWRITE",
+        "modeLastUpdated": "REMOVE",
+        "ownerId": "vUeLeQMSwhN"
+      },
+      "_sharing": {
+        "groupMode": "FILTER",
+        "groups": [
+          {
+              "id": "HgvQMs6OLY8",
+              "metadata": "VIEW",
+              "data": "VIEW"
+          },
+          {
+            "id": "go1JmjGyJac",
+            "metadata": "EDIT",
+            "data": "VIEW"
+          },
+          {
+            "id": "IU4WMR0MQIm",
+            "metadata": "NONE",
+            "data": "EDIT"
+          }
+        ],
+        "groupExport": true,
+        "userMode": "REMOVE",
+        "users": [],
+        "userExport": false,
+        "publicAccess": {
+          "metadata": "VIEW",
+          "data": "VIEW"
+        }
+      },
+      "_type": "completeAggregate", 
+      "_url": ["https://who-dev.dhis2.org/surv-xx"], 
+      "_version": "1.0.1",
+      "customObjects": [
+                {
+                    "objectIds": ["vclhob0deoe","nrJQj0Kxp03","b64lroD7kZI","r64RbaAOIri","Frp6BqdLOsQ","eZad6JpXT0E","sieOmlObW8L","C1ocEPMZUWn","Fk8VrgQxtwq","RVjbAoItU8B","nShrFb9wexG","iuNfzUx351B","SQ5BUEZpsgd","BlwExnIXNEA","mdYA6Hfl2J4","XhrFVuATU9L","hub5RjpxB7b"],
+                    "objectType": "predictors"
+                },
+                {
+                    "objectIds": ["I3570OWVcKN","XRFwVZNgo0p","WpKu7cyd7Zo","DkmMEcubiPv","dbdfZyjDco2","lXepqiS7wQi","Z1lCDUuuuHg","U9azl7BliKu","mZ08SCurQVX","v1n8aztMcYN","cPLAnOTldta","iLEkjJcYTJd","k2hYvS8LTFl","j3t0jhGOHhP","ZYvr5OITjBa","qFGp7kAZ5Me","RGXZgVrOQyo","f45l3xKDAPs","I5V4NUxtTre","f3MTBlkGjZw","BSyp9DU4HWn","jUaZniVe1Uq","yCjneRUc565","fVYqPV4Yfuv","KNruIU8QeKP"],
+                    "objectType": "dataElements"
+                },
+                {
+ 					"objectIds": ["VN7pFfeVXba","JtnZyeExDnc","Pct5ZPMzYYU","hZADOqoTfCd","rbnCYeVsf99","hdZoVVTIqAB","RKRtOnjvzsZ","z5jMXJUjwE3","lMRuY8KHVKP","lp0Vd00vsJc","w2iZCr1yuyW","eX8kVT3oRoc","hQlQCMJVGm5","KmsiTTRKukj","pVGPPQO2l5a","G3hmodqXksf","PHZVCOOFSxM","UEwh9Nzkyte","EV7pLkScOxU","SDTCkYf3yty","olyDHtjqsVu","hjLcTJkb2v0","jOPsgu2wKpP","zsy9yxn8Ash","V6hrsxzaRWa","eF3kvrEC92b","hKxdzxZ4WFX","hQKLpTV16Tc","aEQUwXmLNwz","Gazfp4C0d0g","vttjnYc5gmZ","DZeudzA82MM","nmZflUxmA7x","Kp7E0E0sxJT","cQEzLU5zHVR","QRzHPqj6T8j","j33w6nNEKnL","IDKxYQBGMdd","QgnRf1pSBr7","sqwG1sbHh2E","hxWZo7jVGv6","TzYSEXFpeD5","JE9sDIe2ZcC","AQq6QEjVLy3","DtBKN5J6nUo","Bhq0SYV7mDQ","mQUiCSlNSVh","Ndl0LCYzQyy","oI7XZUpAcs6","foIT9ImHcrf","aoEX0fnD5lV","Hc3B3BU315u","cfl4mkxuLhd","aFfdM1c5sRa","VEwTo9pxktu","bBHXT6w6ALO","uD7QDfNEpI2","m9GkAe97w2p","VDhSNgO5aEM","iZQRc4CWmIr","clKgNLbcRAp","OAaX0TBYliv","VYk6cMXgCY9","kna1XmkqQso","Z3tEPmwoU3k","y1CNMa8WFB8","ZZ22mApkgIo","vav3peUGYbC","YAZFjSM05TX","FS6Ml4vHa4P","GRC7Xyb28sn","bsDMS2hPESS","Nb9CVapWdVE","CmQc4v3pzdU","T2H2TbUBrDY","YrI7hQQadTD","nn2oCQFZTTc","aukwaj2kyvN","eAyOBfJrs3r","ndbZtM8GymS","oZ3ZiT58hBr","T7JZ2VvrHI7","HpCrcujsxpP","TbLWFPUyRK1","Jg4ZtqaQHTy","WpC4r43PwBr","Krl87NwzrzS","TdxvdtbHsGa","RK8hP0YA6DY","kR3X4SZFhLR","zBflDq8KY5L","wROWcxeV3Qn","QYI4OsZ0MXt","oJR70uNhjpc","npjj2Mylye8","U4Ya6XzPc1t","xtky4S0uHGJ","SDaGmAx4Tna","GO9uTXK1BMj","HjOxL3tDqEf","hHsJACKkI5f","PJIL3Utok2F","K5SVUv3lStz","A52AlgcaCEN","uYw7H8L6Zme","fajwNPsupHJ","jTtMVb8GAIH","THePwVUy8OG","mDewBi5q4vL","Mu8LJAdYrfq","rDmb7pTwats","LKM1GRM2nhG","S6mNd9QByTx","cyuhRk2Wfh8","A4YzzmySECJ","x5GM3sHY4TJ","nphmisrSLFr","fd3edLNhzpy","eEZeT2DGN8J","v1XB2rRr7s7","TFyvFrMIGYz","sY7zcVlzRHx","kZvqLqzBPGK","GCF9N8Z9O3U","ktqMNXwts5h","D4ChC06lIXi","ZQ7MjGLGBRi","XIMXNswD8Ah","f0NZdz0C7mU","b0TMcoqwKne","fxF64ipVSq8","ER0GyaaFTpd","aH6fYtpH2sA","P0G458GzYBz","q25AwL80kYJ","Bc74DE5XBEp","TPc7yc6sXWR","ffNQctZ9uxd","VT7WZlgGtx0","POZt3S16FR3","ziFf0topvdC","WND2T40z1d1"],
+ 					"objectType": "indicators"
+ 				}
+            ],
+      "dashboardIds": [
+        "lVT6XzDBOwn",
+		"JP3tqN90yFm",
+		"iA0Cnyzzbzz",
+		"cmJSUVWW728",
+		"zSz4Ot5OCXR",
+		"F1IeB5VhNHS",
+		"emf8ExRBR6b",
+		"yxinfcyn55y",
+		"xobqPyWbQit",
+		"ZwDMLtwOdWB",
+		"SBKXkyxol3L",
+		"XsjhOBMvlcW",
+		"ViUjlBVHiHq",
+		"sT6eC7JKz4I",
+		"QTjsxM6B0cd",
+		"sTGxyTfrVnP",
+		"XKD0x2g9gK1"
+      ], 
+      "dataElementGroupIds": [
+        "ZE7pzepVQfy",
+		"a9IzOxtrNAe"
+      ], 
+      "dataSetIds": [
+         "MlWyNDcDoQf",
+         "OTvkNTijYQY",
+         "NuFW4zoIXC0"
+      ], 
+      "indicatorGroupIds": [
+        "FW8wnqkjmr6",
+        "HSVL7Rh9JMw",
+        "rnPpen0eECz"
+      ], 
+      "validationRuleGroupIds": [
+        "iOEfzRCqPEK"
+      ],
+      "exportDataSetIds": [], 
+      "exportIndicatorGroupsIds": []
+    },
+    {
+      "_basePath": "../IDSR/",
+      "_code": "IDSR", 
+      "_name": "IDSR", 
+      "_prefix": "",
+      "_ownership": {
+        "modeOwner": "OVERWRITE",
+        "modeLastUpdated": "REMOVE",
+        "ownerId": "vUeLeQMSwhN"
+      },
+      "_sharing": {
+        "groupMode": "FILTER",
+        "groups": [
+          {
+              "id": "HgvQMs6OLY8",
+              "metadata": "VIEW",
+              "data": "VIEW"
+          },
+          {
+            "id": "go1JmjGyJac",
+            "metadata": "EDIT",
+            "data": "VIEW"
+          },
+          {
+            "id": "IU4WMR0MQIm",
+            "metadata": "NONE",
+            "data": "EDIT"
+          }
+        ],
+        "groupExport": true,
+        "userMode": "REMOVE",
+        "users": [],
+        "userExport": false,
+        "publicAccess": {
+          "metadata": "VIEW",
+          "data": "VIEW"
+        }
+      },
+      "_type": "completeAggregate", 
+      "_url": ["https://who-dev.dhis2.org/surv-xx"], 
+      "_version": "1.0.1",
+      "customObjects": [
+                {
+                    "objectIds": ["vclhob0deoe","nrJQj0Kxp03","b64lroD7kZI","r64RbaAOIri","Frp6BqdLOsQ","eZad6JpXT0E","sieOmlObW8L","C1ocEPMZUWn","Fk8VrgQxtwq","RVjbAoItU8B","nShrFb9wexG","iuNfzUx351B","SQ5BUEZpsgd","BlwExnIXNEA","mdYA6Hfl2J4","XhrFVuATU9L","hub5RjpxB7b"],
+                    "objectType": "predictors"
+                },
+                {
+                    "objectIds": ["I3570OWVcKN","XRFwVZNgo0p","WpKu7cyd7Zo","DkmMEcubiPv","dbdfZyjDco2","lXepqiS7wQi","Z1lCDUuuuHg","U9azl7BliKu","mZ08SCurQVX","v1n8aztMcYN","cPLAnOTldta","iLEkjJcYTJd","k2hYvS8LTFl","j3t0jhGOHhP","ZYvr5OITjBa","qFGp7kAZ5Me","RGXZgVrOQyo","f45l3xKDAPs","I5V4NUxtTre","f3MTBlkGjZw","BSyp9DU4HWn","jUaZniVe1Uq","yCjneRUc565","fVYqPV4Yfuv","KNruIU8QeKP"],
+                    "objectType": "dataElements"
+                },
+                {
+ 					"objectIds": ["VN7pFfeVXba","JtnZyeExDnc","Pct5ZPMzYYU","hZADOqoTfCd","rbnCYeVsf99","hdZoVVTIqAB","RKRtOnjvzsZ","z5jMXJUjwE3","lMRuY8KHVKP","lp0Vd00vsJc","w2iZCr1yuyW","eX8kVT3oRoc","hQlQCMJVGm5","KmsiTTRKukj","pVGPPQO2l5a","G3hmodqXksf","PHZVCOOFSxM","UEwh9Nzkyte","EV7pLkScOxU","SDTCkYf3yty","olyDHtjqsVu","hjLcTJkb2v0","jOPsgu2wKpP","zsy9yxn8Ash","V6hrsxzaRWa","eF3kvrEC92b","hKxdzxZ4WFX","hQKLpTV16Tc","aEQUwXmLNwz","Gazfp4C0d0g","vttjnYc5gmZ","DZeudzA82MM","nmZflUxmA7x","Kp7E0E0sxJT","cQEzLU5zHVR","QRzHPqj6T8j","j33w6nNEKnL","IDKxYQBGMdd","QgnRf1pSBr7","sqwG1sbHh2E","hxWZo7jVGv6","TzYSEXFpeD5","JE9sDIe2ZcC","AQq6QEjVLy3","DtBKN5J6nUo","Bhq0SYV7mDQ","mQUiCSlNSVh","Ndl0LCYzQyy","oI7XZUpAcs6","foIT9ImHcrf","aoEX0fnD5lV","Hc3B3BU315u","cfl4mkxuLhd","aFfdM1c5sRa","VEwTo9pxktu","bBHXT6w6ALO","uD7QDfNEpI2","m9GkAe97w2p","VDhSNgO5aEM","iZQRc4CWmIr","clKgNLbcRAp","OAaX0TBYliv","VYk6cMXgCY9","kna1XmkqQso","Z3tEPmwoU3k","y1CNMa8WFB8","ZZ22mApkgIo","vav3peUGYbC","YAZFjSM05TX","FS6Ml4vHa4P","GRC7Xyb28sn","bsDMS2hPESS","Nb9CVapWdVE","CmQc4v3pzdU","T2H2TbUBrDY","YrI7hQQadTD","nn2oCQFZTTc","aukwaj2kyvN","eAyOBfJrs3r","ndbZtM8GymS","oZ3ZiT58hBr","T7JZ2VvrHI7","HpCrcujsxpP","TbLWFPUyRK1","Jg4ZtqaQHTy","WpC4r43PwBr","Krl87NwzrzS","TdxvdtbHsGa","RK8hP0YA6DY","kR3X4SZFhLR","zBflDq8KY5L","wROWcxeV3Qn","QYI4OsZ0MXt","oJR70uNhjpc","npjj2Mylye8","U4Ya6XzPc1t","xtky4S0uHGJ","SDaGmAx4Tna","GO9uTXK1BMj","HjOxL3tDqEf","hHsJACKkI5f","PJIL3Utok2F","K5SVUv3lStz","A52AlgcaCEN","uYw7H8L6Zme","fajwNPsupHJ","jTtMVb8GAIH","THePwVUy8OG","mDewBi5q4vL","Mu8LJAdYrfq","rDmb7pTwats","LKM1GRM2nhG","S6mNd9QByTx","cyuhRk2Wfh8","A4YzzmySECJ","x5GM3sHY4TJ","nphmisrSLFr","fd3edLNhzpy","eEZeT2DGN8J","v1XB2rRr7s7","TFyvFrMIGYz","sY7zcVlzRHx","kZvqLqzBPGK","GCF9N8Z9O3U","ktqMNXwts5h","D4ChC06lIXi","ZQ7MjGLGBRi","XIMXNswD8Ah","f0NZdz0C7mU","b0TMcoqwKne","fxF64ipVSq8","ER0GyaaFTpd","aH6fYtpH2sA","P0G458GzYBz","q25AwL80kYJ","Bc74DE5XBEp","TPc7yc6sXWR","ffNQctZ9uxd","VT7WZlgGtx0","POZt3S16FR3","ziFf0topvdC","WND2T40z1d1"],
+ 					"objectType": "indicators"
+ 				}
+            ],
+      "dashboardIds": [
+        "lVT6XzDBOwn",
+		"JP3tqN90yFm",
+		"iA0Cnyzzbzz",
+		"cmJSUVWW728",
+		"zSz4Ot5OCXR",
+		"F1IeB5VhNHS",
+		"emf8ExRBR6b",
+		"yxinfcyn55y",
+		"xobqPyWbQit",
+		"ZwDMLtwOdWB",
+		"SBKXkyxol3L",
+		"XsjhOBMvlcW",
+		"ViUjlBVHiHq",
+		"sT6eC7JKz4I",
+		"QTjsxM6B0cd",
+		"sTGxyTfrVnP",
+		"XKD0x2g9gK1"
+      ], 
+      "dataElementGroupIds": [
+        "ZE7pzepVQfy",
+		"a9IzOxtrNAe",
+		"m9yPuQEqxmS"
+      ], 
+      "dataSetIds": [
+      "MlWyNDcDoQf",
+    	"ZyZmZTUwctj"
+      ], 
+      "indicatorGroupIds": [
+        "FW8wnqkjmr6",
+        "HSVL7Rh9JMw",
+        "rnPpen0eECz"
+      ], 
+      "validationRuleGroupIds": [
+        "iOEfzRCqPEK"
+      ],
+      "exportDataSetIds": [], 
+      "exportIndicatorGroupsIds": []
+    },
+    {
+      "_basePath": "../IDSR/",
+      "_code": "IDSR", 
+      "_name": "IDSR Dashboard", 
+      "_prefix": "",
+      "_ownership": {
+        "modeOwner": "OVERWRITE",
+        "modeLastUpdated": "REMOVE",
+        "ownerId": "vUeLeQMSwhN"
+      },
+      "_sharing": {
+        "groupMode": "FILTER",
+        "groups": [
+          {
+              "id": "HgvQMs6OLY8",
+              "metadata": "VIEW",
+              "data": "VIEW"
+          },
+          {
+            "id": "go1JmjGyJac",
+            "metadata": "EDIT",
+            "data": "VIEW"
+          },
+          {
+            "id": "IU4WMR0MQIm",
+            "metadata": "NONE",
+            "data": "EDIT"
+          }
+        ],
+        "groupExport": true,
+        "userMode": "REMOVE",
+        "users": [],
+        "userExport": false,
+        "publicAccess": {
+          "metadata": "VIEW",
+          "data": "VIEW"
+        }
+      },
+      "_type": "dashboardAggregate", 
+     "_url": ["https://who-dev.dhis2.org/surv-xx"], 
+      "_version": "1.0.1",
+      "customObjects": [
+                {
+                    "objectIds": ["vclhob0deoe","nrJQj0Kxp03","b64lroD7kZI","r64RbaAOIri","Frp6BqdLOsQ","eZad6JpXT0E","sieOmlObW8L","C1ocEPMZUWn","Fk8VrgQxtwq","RVjbAoItU8B","nShrFb9wexG","iuNfzUx351B","SQ5BUEZpsgd","BlwExnIXNEA","mdYA6Hfl2J4","XhrFVuATU9L","hub5RjpxB7b"],
+                    "objectType": "predictors"
+                },
+                {
+ 					"objectIds": ["yCjneRUc565","k2hYvS8LTFl","fVYqPV4Yfuv","j3t0jhGOHhP","ZYvr5OITjBa","qFGp7kAZ5Me","Z1lCDUuuuHg","mZ08SCurQVX","KNruIU8QeKP","I3570OWVcKN","RGXZgVrOQyo","f45l3xKDAPs","I5V4NUxtTre","f3MTBlkGjZw","BSyp9DU4HWn","jUaZniVe1Uq"],
+                	"objectType": "dataElements"
+                },
+                {
+ 					"objectIds": ["a9IzOxtrNAe"],
+                	"objectType": "dataElementGroups"
+                },
+                {
+ 					"objectIds": ["VN7pFfeVXba","JtnZyeExDnc","Pct5ZPMzYYU","hZADOqoTfCd","rbnCYeVsf99","hdZoVVTIqAB","RKRtOnjvzsZ","z5jMXJUjwE3","lMRuY8KHVKP","lp0Vd00vsJc","w2iZCr1yuyW","eX8kVT3oRoc","hQlQCMJVGm5","KmsiTTRKukj","pVGPPQO2l5a","G3hmodqXksf","PHZVCOOFSxM","UEwh9Nzkyte","EV7pLkScOxU","SDTCkYf3yty","olyDHtjqsVu","hjLcTJkb2v0","jOPsgu2wKpP","zsy9yxn8Ash","V6hrsxzaRWa","eF3kvrEC92b","hKxdzxZ4WFX","hQKLpTV16Tc","aEQUwXmLNwz","Gazfp4C0d0g","vttjnYc5gmZ","DZeudzA82MM","nmZflUxmA7x","Kp7E0E0sxJT","cQEzLU5zHVR","QRzHPqj6T8j","j33w6nNEKnL","IDKxYQBGMdd","QgnRf1pSBr7","sqwG1sbHh2E","hxWZo7jVGv6","TzYSEXFpeD5","JE9sDIe2ZcC","AQq6QEjVLy3","DtBKN5J6nUo","Bhq0SYV7mDQ","mQUiCSlNSVh","Ndl0LCYzQyy","oI7XZUpAcs6","foIT9ImHcrf","aoEX0fnD5lV","Hc3B3BU315u","cfl4mkxuLhd","aFfdM1c5sRa","VEwTo9pxktu","bBHXT6w6ALO","uD7QDfNEpI2","m9GkAe97w2p","VDhSNgO5aEM","iZQRc4CWmIr","clKgNLbcRAp","OAaX0TBYliv","VYk6cMXgCY9","kna1XmkqQso","Z3tEPmwoU3k","y1CNMa8WFB8","ZZ22mApkgIo","vav3peUGYbC","YAZFjSM05TX","FS6Ml4vHa4P","GRC7Xyb28sn","bsDMS2hPESS","Nb9CVapWdVE","CmQc4v3pzdU","T2H2TbUBrDY","YrI7hQQadTD","nn2oCQFZTTc","aukwaj2kyvN","eAyOBfJrs3r","ndbZtM8GymS","oZ3ZiT58hBr","T7JZ2VvrHI7","HpCrcujsxpP","TbLWFPUyRK1","Jg4ZtqaQHTy","WpC4r43PwBr","Krl87NwzrzS","TdxvdtbHsGa","RK8hP0YA6DY","kR3X4SZFhLR","zBflDq8KY5L","wROWcxeV3Qn","QYI4OsZ0MXt","oJR70uNhjpc","npjj2Mylye8","U4Ya6XzPc1t","xtky4S0uHGJ","SDaGmAx4Tna","GO9uTXK1BMj","HjOxL3tDqEf","hHsJACKkI5f","PJIL3Utok2F","K5SVUv3lStz","A52AlgcaCEN","uYw7H8L6Zme","fajwNPsupHJ","jTtMVb8GAIH","THePwVUy8OG","mDewBi5q4vL","Mu8LJAdYrfq","rDmb7pTwats","LKM1GRM2nhG","S6mNd9QByTx","cyuhRk2Wfh8","A4YzzmySECJ","x5GM3sHY4TJ","nphmisrSLFr","fd3edLNhzpy","eEZeT2DGN8J","v1XB2rRr7s7","TFyvFrMIGYz","sY7zcVlzRHx","kZvqLqzBPGK","GCF9N8Z9O3U","ktqMNXwts5h","D4ChC06lIXi","ZQ7MjGLGBRi","XIMXNswD8Ah","f0NZdz0C7mU","b0TMcoqwKne","fxF64ipVSq8","ER0GyaaFTpd","aH6fYtpH2sA","P0G458GzYBz","q25AwL80kYJ","Bc74DE5XBEp","TPc7yc6sXWR","ffNQctZ9uxd","VT7WZlgGtx0","POZt3S16FR3","ziFf0topvdC","WND2T40z1d1"],
+ 					"objectType": "indicators"
+ 				}
+            ],
+      "dashboardIds": [
+        "lVT6XzDBOwn",
+		"JP3tqN90yFm",
+		"iA0Cnyzzbzz",
+		"cmJSUVWW728",
+		"zSz4Ot5OCXR",
+		"F1IeB5VhNHS",
+		"emf8ExRBR6b",
+		"yxinfcyn55y",
+		"xobqPyWbQit",
+		"ZwDMLtwOdWB",
+		"SBKXkyxol3L",
+		"XsjhOBMvlcW",
+		"ViUjlBVHiHq",
+		"sT6eC7JKz4I",
+		"QTjsxM6B0cd",
+		"sTGxyTfrVnP",
+		"XKD0x2g9gK1"
+      ],
+      "indicatorGroupIds": [
+        "FW8wnqkjmr6",
+        "HSVL7Rh9JMw",
+        "rnPpen0eECz"
+      ], 
+      "exportIndicatorGroupsIds": []
+    }
+  ]
+}
+
+
