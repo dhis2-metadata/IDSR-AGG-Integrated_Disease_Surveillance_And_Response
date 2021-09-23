@@ -1,4 +1,4 @@
-# Disease surveillance aggregate system design
+# Disease surveillance aggregate system design ( #idsr-aggregate-design }
 
 Draft version, last updated 2020-05-29
 
