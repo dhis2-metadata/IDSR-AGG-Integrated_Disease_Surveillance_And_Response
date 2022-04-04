@@ -371,7 +371,7 @@ Refer to the [DHIS2 Documentation](https://docs.dhis2.org/) for more information
 
 ### Organisation unit assignment
 
-The data sets must be assigned to organisation units within existing hierarchy in order to be accessible for data entry and data analysis personnel. Rehab (Master Facility List)                     |
+The data sets must be assigned to organisation units within existing hierarchy in order to be accessible for data entry and data analysis personnel.
 
 ### Duplicated metadata
 
