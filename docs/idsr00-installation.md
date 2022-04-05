@@ -307,6 +307,12 @@ The steps to prepare the predictors for import are described below:
 2. Find the following organisationUnitLevel placeholders in the json file: `<OU_LEVEL_FACILITY_UID>`
 3. Replace the placeholders with the UID of the identified facility level in the target instance.
 
+### Validation rules { #idsr-validation-rules }
+
+All validation rules included in the package are listed in the metadata reference file.
+
+The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance befre importing the package.
+
 ## Importing metadata
 
 Use [Import/Export](#import_export) DHIS2 app to import metadata packages. It is advisable to use the "dry run" feature to identify issues before attempting to do an actual import of the metadata. If "dry run" reports any issues or conflicts, see the [import conflicts](#handling-import-conflicts) section below. If the "dry run"/"validate" import works without error, attempt to import the metadata. If the import succeeds without any errors, you can proceed to [configuring](#configuration) the module. In some cases, import conflicts or issues are not shown during the "dry run", but appear when the actual import is attempted. In this case, the import summary will list any errors that need to be resolved.
@@ -397,4 +403,4 @@ However, it is strongly recommended to take great caution if you decide to chang
 
 ## Removing metadata
 
-In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadat requires advanced knowledge of DHIS2 and various dependenies.
+In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependenies.
