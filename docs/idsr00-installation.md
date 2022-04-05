@@ -10,7 +10,7 @@ Available translations: French
 
 ### DHIS2.35
 
-=== "IDSR00 - Complete package"
+=== "Complete package"
 
     ```json
     "package": {
@@ -26,7 +26,7 @@ Available translations: French
     }
     ```
 
-=== "IDSRDB - Dashboard package"
+=== "Dashboard package"
 
     ```json
     "package": {
@@ -44,7 +44,7 @@ Available translations: French
 
 ### DHIS2.36
 
-=== "IDSR00 - Complete package"
+=== "Complete package"
 
     ```json
     "package": {
@@ -60,7 +60,7 @@ Available translations: French
     }
     ```
 
-=== "IDSRDB - Dashboard package"
+=== "Dashboard package"
 
     ```json
     "package": {
