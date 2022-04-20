@@ -311,7 +311,13 @@ The steps to prepare the predictors for import are described below:
 
 All validation rules included in the package are listed in the metadata reference file.
 
-The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance befre importing the package.
+The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance before importing the package.
+
+### Validation rule notifications
+
+All validation notifications included in the package are listed in the metadata reference file.
+
+Note that all validation rule notifications for this package are also all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY`within the metadata file if you would like to change this strategy before importing the package.
 
 ## Importing metadata
 
