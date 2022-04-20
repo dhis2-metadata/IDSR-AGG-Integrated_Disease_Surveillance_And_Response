@@ -282,29 +282,29 @@ The package includes the following predictors:
 
 | Name                                              | UID           | Period type | Missing value strategy         | Output data element - name                        | Output data element - UID | Organisation unit levels |
 |--------------------------------------|---------------|-------------|--------------------------------|---------------------------------------------------|---------------------------|--------------------------|
-| IDSR - Acute Flacid Paralysis outbreak | `vclhob0deoe` | Weekly      | Skip if all values are missing | IDSR - Acute Flacid Paralysis outbreak            | `yCjneRUc565`             | Facility level           |
-| IDSR - Cholera/AWD Alert               | `nrJQj0Kxp03` | Weekly      | Skip if all values are missing | IDSR - Cholera/AWD Alert    | `k2hYvS8LTFl`             | Facility level           |
-| IDSR - Cholera outbreak                | `b64lroD7kZI` | Weekly      | Skip if all values are missing | IDSR - Cholera outbreak            | `fVYqPV4Yfuv`             | Facility level           |
-| IDSR - Dengue Fever Alert              | `r64RbaAOIri` | Weekly      | Skip if all values are missing | IDSR - Dengue Fever Alert           | `j3t0jhGOHhP`             | Facility level           |
-| IDSR - Diarrhoea with blood Alert      | `Frp6BqdLOsQ` | Weekly      | Skip if all values are missing | IDSR - Diarrhoea with blood Alert    | `ZYvr5OITjBa`             | Facility level           |
-| IDSR - Diphtheria Alert                | `eZad6JpXT0E` | Weekly      | Skip if all values are missing | IDSR - Diphtheria Alert              | `qFGp7kAZ5Me`             | Facility level           |
-| IDSR - Measles Confirmed Outbreak      | `sieOmlObW8L` | Weekly      | Skip if all values are missing | IDSR - Measles Confirmed Outbreak     | `Z1lCDUuuuHg`             | Facility level           |
-| IDSR - Measles Suspected Outbreak      | `C1ocEPMZUWn` | Weekly      | Skip if all values are missing | IDSR - Measles Suspected Outbreak | `mZ08SCurQVX`             | Facility level           |
-| IDSR - Meningites Alert                | `qN9hTkwE4Ye` | Weekly      | Skip if all values are missing | IDSR - Meningites Alert | `KNruIU8QeKP`             | Facility level           |
-| IDSR - Meningitis outbreak             | `HXBvKxWaujs` | Weekly      | Skip if all values are missing | IDSR - Meningitis outbreak | `I3570OWVcKN`             | Facility level           |
-| IDSR - Neonatal Tetanus Alert          | `iuNfzUx351B` | Weekly      | Skip if all values are missing | IDSR - Neonatal Tetanus Alert | `RGXZgVrOQyo`             | Facility level           |
-| IDSR - Non Neonatal tetanus Alert      | `SQ5BUEZpsgd` | Weekly      | Skip if all values are missing | IDSR - Non Neonatal tetanus Alert | `f45l3xKDAPs`             | Facility level           |
-| IDSR - Pertussis Alert                 | `BlwExnIXNEA` | Weekly      | Skip if all values are missing | IDSR - Pertussis Alert | `I5V4NUxtTre`             | Facility level           |
-| IDSR - Rabies Alert                    | `mdYA6Hfl2J4` | Weekly      | Skip if all values are missing | IDSR - Rabies Alert | `f3MTBlkGjZw`             | Facility level           |
-| IDSR - Viral Haemorragic Fever Alert   | `XhrFVuATU9L` | Weekly      | Skip if all values are missing | IDSR - Viral Haemorragic Fever Alert | `BSyp9DU4HWn`             | Facility level           |
-| IDSR - Yellow Fever Alert              | `hub5RjpxB7b` | Weekly      | Skip if all values are missing | IDSR - Yellow Fever Alert | `jUaZniVe1Uq`             | Facility level           |
+| IDSR - Acute Flacid Paralysis outbreak | `vclhob0deoe` | Weekly      | Skip if all values are missing | IDSR - Acute Flacid Paralysis outbreak            | `yCjneRUc565`             | District level           |
+| IDSR - Cholera/AWD Alert               | `nrJQj0Kxp03` | Weekly      | Skip if all values are missing | IDSR - Cholera/AWD Alert    | `k2hYvS8LTFl`             | District level           |
+| IDSR - Cholera outbreak                | `b64lroD7kZI` | Weekly      | Skip if all values are missing | IDSR - Cholera outbreak            | `fVYqPV4Yfuv`             | District level           |
+| IDSR - Dengue Fever Alert              | `r64RbaAOIri` | Weekly      | Skip if all values are missing | IDSR - Dengue Fever Alert           | `j3t0jhGOHhP`             | District level           |
+| IDSR - Diarrhoea with blood Alert      | `Frp6BqdLOsQ` | Weekly      | Skip if all values are missing | IDSR - Diarrhoea with blood Alert    | `ZYvr5OITjBa`             | District level           |
+| IDSR - Diphtheria Alert                | `eZad6JpXT0E` | Weekly      | Skip if all values are missing | IDSR - Diphtheria Alert              | `qFGp7kAZ5Me`             | District level           |
+| IDSR - Measles Confirmed Outbreak      | `sieOmlObW8L` | Weekly      | Skip if all values are missing | IDSR - Measles Confirmed Outbreak     | `Z1lCDUuuuHg`             | District level           |
+| IDSR - Measles Suspected Outbreak      | `C1ocEPMZUWn` | Weekly      | Skip if all values are missing | IDSR - Measles Suspected Outbreak | `mZ08SCurQVX`             | District level           |
+| IDSR - Meningites Alert                | `qN9hTkwE4Ye` | Weekly      | Skip if all values are missing | IDSR - Meningites Alert | `KNruIU8QeKP`             | District level           |
+| IDSR - Meningitis outbreak             | `HXBvKxWaujs` | Weekly      | Skip if all values are missing | IDSR - Meningitis outbreak | `I3570OWVcKN`             | District level           |
+| IDSR - Neonatal Tetanus Alert          | `iuNfzUx351B` | Weekly      | Skip if all values are missing | IDSR - Neonatal Tetanus Alert | `RGXZgVrOQyo`             | District level           |
+| IDSR - Non Neonatal tetanus Alert      | `SQ5BUEZpsgd` | Weekly      | Skip if all values are missing | IDSR - Non Neonatal tetanus Alert | `f45l3xKDAPs`             | District level           |
+| IDSR - Pertussis Alert                 | `BlwExnIXNEA` | Weekly      | Skip if all values are missing | IDSR - Pertussis Alert | `I5V4NUxtTre`             | District level           |
+| IDSR - Rabies Alert                    | `mdYA6Hfl2J4` | Weekly      | Skip if all values are missing | IDSR - Rabies Alert | `f3MTBlkGjZw`             | District level           |
+| IDSR - Viral Haemorragic Fever Alert   | `XhrFVuATU9L` | Weekly      | Skip if all values are missing | IDSR - Viral Haemorragic Fever Alert | `BSyp9DU4HWn`             | District level           |
+| IDSR - Yellow Fever Alert              | `hub5RjpxB7b` | Weekly      | Skip if all values are missing | IDSR - Yellow Fever Alert | `jUaZniVe1Uq`             | District level           |
 
 Predictor metadata includes organisation unit levels used for aggregation of data values. The package metadata file contains placeholders that need to be replaced with the UIDs of the corresponding organisation unit levels in the target database.
 
 The steps to prepare the predictors for import are described below:
 
-1. Identify the organisationUnitLevel UID of the Facility level at which the data for the predictors will be aggregated. Use the following API endpoint to identify the required UID: `../api/organisationUnitLevels.json?fields=id,name`
-2. Find the following organisationUnitLevel placeholders in the json file: `<OU_LEVEL_FACILITY_UID>`
+1. Identify the organisationUnitLevel UID of the District level at which the data for the predictors will be aggregated. Use the following API endpoint to identify the required UID: `../api/organisationUnitLevels.json?fields=id,name`
+2. Find the following organisationUnitLevel placeholders in the json file: `<OU_LEVEL_DISTRICT_UID>`
 3. Replace the placeholders with the UID of the identified facility level in the target instance.
 
 ### Validation rules { #idsr-validation-rules }
