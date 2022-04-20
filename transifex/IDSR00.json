@@ -46510,6 +46510,688 @@
             ]
         }
     ],
+    "validationNotificationTemplates": [
+        {
+            "code": "IDSR_CHOLERA_ALERT_2AWD",
+            "id": "whiD3Y61Zdu",
+            "name": "IDSR - Cholera alert - 2 cases of AWD aged 2 years and older (linked by time and place) with severe dehydration or dying",
+            "externalAccess": false,
+            "subjectTemplate": "Cholera alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 2 cases of AWD aged 2 years and older (linked by time and place) with severe dehydration or dying in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "ecHeOQORxfc"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CHOLERA_ALERTDEATH_AWD",
+            "id": "oY4f4J9MkbM",
+            "name": "IDSR - Cholera Alert - One death from severe AWD in a person > 5 years old",
+            "externalAccess": false,
+            "subjectTemplate": "Cholera alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": " V{org_unit_name} has exceeded the threshold of 1 case of death from severe AWD in a person > 5 years old in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "JeY4g6wahO5"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CHOLERA_ALERT_RDT",
+            "id": "lWJ5oSFDd3r",
+            "name": "IDSR - Cholera Alert - RDT positive",
+            "externalAccess": false,
+            "subjectTemplate": "Cholera alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 case of cholera RDT positive in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "NuZCTdX9v1V"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CONFIRMED_AFP_VDPV_ALERT",
+            "id": "OMFP4xCjxg1",
+            "name": "IDSR - Confirmed AFP (VDPV) Alert",
+            "externalAccess": false,
+            "subjectTemplate": "Acute Flaccid Paralysis due to VDPV alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 confirmed case of Acute Flaccid Paralysis due to VDPV in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "GrtCR8t9S2H"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CONFIRMED_AFP_WPV_ALERT",
+            "id": "J8KO3NcW3zs",
+            "name": "IDSR - Confirmed AFP (WPV) Alert",
+            "externalAccess": false,
+            "subjectTemplate": "Acute Flaccid Paralysis due to WPV alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 confirmed case of Acute Flaccid Paralysis due to WPV in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "Kmowg4bHtx3"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CONFIRMED_DENGUE_FEVER_ALERT",
+            "id": "Y0X2Ivu0sRd",
+            "name": "IDSR - Confirmed Dengue Fever Alert",
+            "externalAccess": false,
+            "subjectTemplate": "Dengue fever alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 confirmed case of dengue in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "PRkubegaucB"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_CONFIRMED_RABIES_ALERT",
+            "id": "kBjI3kv0ooT",
+            "name": "IDSR - Confirmed Rabies Alert",
+            "externalAccess": false,
+            "subjectTemplate": "Rabies alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 confirmed case of Rabies in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "LjGqJZyl4mV"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_DEATH_ACUTE_WATERY_DIARRHOEA",
+            "id": "k52WsFuVjFE",
+            "name": "IDSR - Death Acute Watery Diarrhoea",
+            "externalAccess": false,
+            "subjectTemplate": "The number of deaths from acute watery diarrhoea in a person at least 5 years old is 1 or more",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "The number of deaths from acute watery diarrhoea in a person at least 5 years old in V{period} is V{left_side_value} in V{org_unit_name}. This exceeds the threshold of V{right_side_value}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "I0Qb4BR3G7O"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_MEASLES_EPIDEMIC_BASED_ON_CONFIRMED_CASES",
+            "id": "EzdMmQxKusE",
+            "name": "IDSR - Measles epidemic based on confirmed cases",
+            "externalAccess": false,
+            "subjectTemplate": "Measles epidemic based on confirmed cases in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 3 confirmed measles cases over the last 30 days. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "JLm2Y6t2qbQ"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_MENINGITIS_ALERT",
+            "id": "Y9qFGIVIP0P",
+            "name": "IDSR - Meningitis alert",
+            "externalAccess": false,
+            "subjectTemplate": "District in meningitis alert",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the alert threshold of :\n- 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 \n- Or 2 suspected cases in one week for district/ subdistrict population under 30000",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "AqCBw9jrmRT"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_MENINGITIS_EPIDEMIC",
+            "id": "ZBBkQE6abI7",
+            "name": "IDSR - Meningitis epidemic",
+            "externalAccess": false,
+            "subjectTemplate": "District in meningitis epidemic",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded in V{period} the epidemic threshold of :\n- 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 (epidemic alert) \n- Or  5 suspected cases in one week or doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "N4YsFm3aKFN"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_PROBABLE_YELLOW_FEVER_EPIDEMIC",
+            "id": "kPxMvk4u1C5",
+            "name": "IDSR - Probable Yellow Fever epidemic",
+            "externalAccess": false,
+            "subjectTemplate": "District in yellow fever epidemic",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 case of yellow fever (IgM positive) in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "CJbk0vtamtZ"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_RUBELLA_EPIDEMIC",
+            "id": "Pix8ZVB1UPZ",
+            "name": "IDSR - Rubella epidemic",
+            "externalAccess": false,
+            "subjectTemplate": "Rubella epidemic in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 case of confirmed cases of rubella in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "Akmfhxnv10d"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_SHIGELLA",
+            "id": "iANjQmxiOz4",
+            "name": "IDSR - Suspected Diarrhoea with Blood (Shigella) ",
+            "externalAccess": false,
+            "subjectTemplate": "Diarrhoea with blood (shigella) alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 3 suspected case of diarrhoea with blood (shigella) in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "O0K3P91H39O"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_MEASLES_RUBELLA",
+            "id": "pDM4Bd1Da2X",
+            "name": "IDSR - Suspected Measles/Rubella",
+            "externalAccess": false,
+            "subjectTemplate": "Measles/rubella epidemic in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 5 suspected measles cases over the last 30 days. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "jddnTG1cmMQ"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_NEONATAL_TETANUS",
+            "id": "kA0EwpHEcKq",
+            "name": "IDSR - Suspected Neonatal Tetanus",
+            "externalAccess": false,
+            "subjectTemplate": "Neonatal tetanus alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 suspected case of Neonatal tetanus in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "CB7ukUMI7md"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_NON_NEONATAL_TETANUS",
+            "id": "Z2TTBKf2LKO",
+            "name": "IDSR - Suspected Non Neonatal Tetanus",
+            "externalAccess": false,
+            "subjectTemplate": "Non Neonatal tetanus alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 suspected case of Non Neonatal tetanus in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "OWYVx5ICX2e"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_PERTUSSIS",
+            "id": "IHTrdBWGzZd",
+            "name": "IDSR - Suspected Pertussis",
+            "externalAccess": false,
+            "subjectTemplate": "Pertussis alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 suspected case of Pertussis in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "JHvaFMa13vf"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_PLAGUE",
+            "id": "XOUw6xueco0",
+            "name": "IDSR - Suspected Plague",
+            "externalAccess": false,
+            "subjectTemplate": "Plague alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 suspected case of Plague in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "TJtCmWWAgpn"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        },
+        {
+            "code": "IDSR_SUSPECTED_VIRAL_HAEMORRAGIC_FEVER",
+            "id": "ececNPuNZE4",
+            "name": "IDSR - Suspected Viral Haemorragic Fever",
+            "externalAccess": false,
+            "subjectTemplate": "Viral Haemorragic Fever alert in V{org_unit_name}",
+            "sendStrategy": "SINGLE_NOTIFICATION",
+            "notifyUsersInHierarchyOnly": false,
+            "favorite": false,
+            "messageTemplate": "V{org_unit_name} has exceeded the threshold of 1 suspected case of Viral Haemorragic Fever in V{period}. Please follow up with this location.",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "delete": true,
+                "write": true,
+                "manage": true
+            },
+            "favorites": [],
+            "recipientUserGroups": [
+                {
+                    "id": "IU4WMR0MQIm"
+                }
+            ],
+            "translations": [],
+            "userGroupAccesses": [],
+            "validationRules": [
+                {
+                    "id": "Tl1BmGtnDgi"
+                }
+            ],
+            "attributeValues": [],
+            "userAccesses": []
+        }
+    ],
     "visualizations": [
         {
             "aggregationType": "DEFAULT",
