@@ -313,11 +313,11 @@ All validation rules included in the package are listed in the metadata referenc
 
 The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance before importing the package.
 
-### Validation rule notifications
+### Validation rule notifications { #idsr-validation-notifications }
 
 All validation notifications included in the package are listed in the metadata reference file.
 
-Note that all validation rule notifications for this package are also all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY`within the metadata file if you would like to change this strategy before importing the package.
+Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY`within the metadata file if you would like to change this strategy before importing the package. Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting.
 
 ## Importing metadata
 
@@ -368,7 +368,7 @@ Three core user groups are included in the package:
 
 - IDSR access (view metadata/view data)
 - IDSR admin (view and edit metadata/no access to data)
-- IDSR alerts - (view metadata/capture and view data)
+- IDSR alerts (view metadata/capture and view data)
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in the package may be adjusted depending on the set up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more information.
 
@@ -385,11 +385,51 @@ Refer to the [DHIS2 Documentation](https://docs.dhis2.org/) for more information
 
 The data sets must be assigned to organisation units within existing hierarchy in order to be accessible for data entry and data analysis personnel.
 
+### Creating jobs in the scheduler { #idsr-scheduling }
+
+You will have to use the [scheduler app](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html) in order to take advantage of the predictor and validation notification components of the package. You will need at least 3 jobs in the following order:
+
+1. Predictor
+2. Analytics Table
+3. Monitoring
+
+You will want each job to complete before you run the next one (ie. the predictors should all be created before analytics starts; the monitoring job should only start after analytics is complete). Each DHIS2 implementation will need to review their configuration to determine the time it takes to run each of these jobs and schedule them accordingly. It is recommended that you have these run late at night when there is not much activity within your DHIS2 instance, as these are generally resource heavy operations.
+
+A couple tips for each job type:
+
+#### Predictor
+
+Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most current period that you need data for is the recommended approach.  
+
+You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDSR.` If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
+
+This needs to be the first job that starts in your sequence, and should finish before the next job (analytics) starts.
+
+#### Analytics table
+
+The analytics table job takes all of the raw data that has been entered and applies the necessary aggregation to it based on your configuration. If you are using an integrated system with multiple programs inside your instance, then you may already have an analytics table job scheduled to run at routine intervals. If this is the case, you may need to modify the period in which it runs so it can run after the predictor job has been completed.
+
+This needs to be second job in your sequence, and should finish before the next job (monitoring) starts.
+
+#### Monitoring
+
+Similar to the predictor, the monitoring job also consists of a relative start and end date. If your data is not changing during previous periods, you can run the monitoring job only for the period you need to review.
+
+You will need multiple monitoring jobs that run during different periods. This is because some of the validation rules for checking thresholds are meant to review a 30-day window while some are meant to be run weekly.
+
+You can specify validation rule groups for the monitoring job. You can therefore two monitoring jobs:
+1. Create one job that runs weekly, using the validation rule group `IDSR - Weekly`
+2. Create one job that runs daily including a window of the last 30 days, using the validation rule group `IDSR - 30 days.` The rules in this group are checking your validation over a 30 day window. As this window updates daily, you will also need to run this job daily.
+
+If you want to send out the validation notifications, ensure that the "Send notifications" item is selected.
+
+![send_notification](resources/images/installation_guide/send_notification_scheduler.png)
+
 ### Duplicated metadata
 
 > **NOTE**
 >
-> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the tracker program](#adapting-the-tracker-program).
+> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the program](#adapting-the-program).
 > If you are using any third party applications that rely on the current metadata, please take into account that this update could break them”
 
 Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - data elements, tracked entity attributes or option sets that already exist. As was noted in the section above on resolving conflict, an important issue to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this is done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.
@@ -401,7 +441,7 @@ One important thing to keep in mind is that DHIS2 has tools that can hide some o
 Once the program has been imported, you might want to make certain modifications to the program. Examples of local adaptations that *could* be made include:
 
 - Adding additional variables to the form.
-- Adapting data element/option names according to national conventions.
+- Adapting data element names according to national conventions.
 - Adding translations to variables and/or the data entry form.
 - Modifying indicators based on local case definitions
 
@@ -409,4 +449,6 @@ However, it is strongly recommended to take great caution if you decide to chang
 
 ## Removing metadata
 
-In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependenies.
+In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependencies.
+
+
