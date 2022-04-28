@@ -114,9 +114,9 @@ Available translations: French
 
 Installation of the module consists of several steps:
 
-1. [Preparing the metadata file with DHIS2 metadata](#preparing-the-metadata-file).
-2. [Importing the metadata file into DHIS2](#importing-metadata).
-3. [Configuring the imported metadata](#configuration).
+1. [Preparing the metadata file with DHIS2 metadata](#preparing-the-metadata-file)
+2. [Importing the metadata file into DHIS2](#importing-metadata)
+3. [Configuring the imported metadata](#configuration)
 4. [Adapting the program after import](#adapting-the-program)
 
 It is recommended to first read through each section of the installation guide before starting the installation and configuration process in DHIS2. Identify applicable sections depending on the type of your import:
@@ -317,11 +317,11 @@ The organisation unit groups for all validation rules are set to facility level.
 
 All validation notifications included in the package are listed in the metadata reference file.
 
-Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY`within the metadata file if you would like to change this strategy before importing the package. Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting.
+Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY` within the metadata file if you would like to change this strategy before importing the package. Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting.
 
 ## Importing metadata
 
-Use [Import/Export](#import_export) DHIS2 app to import metadata packages. It is advisable to use the "dry run" feature to identify issues before attempting to do an actual import of the metadata. If "dry run" reports any issues or conflicts, see the [import conflicts](#handling-import-conflicts) section below. If the "dry run"/"validate" import works without error, attempt to import the metadata. If the import succeeds without any errors, you can proceed to [configuring](#configuration) the module. In some cases, import conflicts or issues are not shown during the "dry run", but appear when the actual import is attempted. In this case, the import summary will list any errors that need to be resolved.
+Use the [Import/Export](#import_export) DHIS2 app to import metadata packages. It is advisable to use the "dry run" feature to identify issues before attempting to do an actual import of the metadata. If "dry run" reports any issues or conflicts, see the [import conflicts](#handling-import-conflicts) section below. If the "dry run"/"validate" import works without error, attempt to import the metadata. If the import succeeds without any errors, you can proceed to [configuring](#configuration) the module. In some cases, import conflicts or issues are not shown during the "dry run", but appear when the actual import is attempted. In this case, the import summary will list any errors that need to be resolved.
 
 ### Handling import conflicts
 
@@ -399,7 +399,7 @@ A couple tips for each job type:
 
 #### Predictor
 
-Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most current period that you need data for is the recommended approach.  
+Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most recent period that you need data for is the recommended approach.  
 
 You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDSR.` If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
 
