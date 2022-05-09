@@ -89,7 +89,7 @@ There are two data exchange mechanisms that are available:
 
 ### DHIS2 to DHIS2 data exchange
 
-As part of this package, an app called &quot;data transfer&quot; has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
+As part of this package, an app called `dhis2 transfer` has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
 
 1. The actual data being sent (ie. the variables/data items)
 2. The location of the data being sent (ie. in DHIS2 the organization units)
@@ -125,24 +125,31 @@ Once the data has been reviewed and verified from the Excel sheet, it can be imp
 
 Dashboards for each of the diseases listed in [Table 1](#table-1) are available. Each disease specific dashboard follows the same layout:
 
-1. Pivot table showing outbreak areas in the last 12 weeks
-2. Map showing outbreak areas in the last week
-3. Pivot table showing the total number of outbreaks in the current year
-4. Map showing the total number of outbreaks this year
-![image-20200719120040175](resources/images/Screen55.png)
+1. Pivot table showing suspected outbreak areas in the last 12 weeks
+2. Map showing suspected outbreak areas in the last week
+3. Pivot table showing suspected outbreak areas in the last 12 weeks
+4. Map showing confirmed outbreak areas in the last week
 
-5. A map showing the incidence rate for the last week
+![dashboard_1](resources/images/dashboard_1.png)
 
-6. A map showing the number of cases for the last week
-![image-20200719120116437](resources/images/Screen04.png)
+5. Pivot table showing suspected outbreak areas in the last year
+6. Map showing suspected outbreak areas in the last year
+7. Pivot table showing confirrmed outbreak areas in the last year
+8. Map showing confirmed outbreak areas in the last year
 
-7. A chart showing cases and deaths in the last 12 weeks
+![dashboard_2](resources/images/dashboard_2.png)
 
-8. A table showing cases and deaths in the last 12 weeks
-![image-20200719120142961](resources/images/Screen15.png)
+9. Map showing the incidence rate in the last week
+10. Map dhowing the distribution of cases in the last week
+11. Chart showing the number of suspected cases and deaths in the last 12 weeks
+12. Pivot table showing the number of suspected cases and deaths in the last 12 weeks
 
-9. Trend of suspected cases by week for this year and last year
-![image-20200719120202780](resources/images/Screen24.png)
+![dashboard_3](resources/images/dashboard_3.png)
+
+13. A comparison of cases by week of this year and last year
+
+![dashboard_4](resources/images/dashboard_4.png)
+
 
 ## Validation Rules and Notifications
 
@@ -172,6 +179,8 @@ Validation rules have been implemented in order to notify individuals of potenti
 | Suspected Diptheria                                          | 1 suspected case                                             |
 | Confirmed AFP (WPV)                                          | 1 confirmed case                                             |
 | Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |
+
+
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
 
 ![image-20200719115221225](resources/images/Screen34.png)
