@@ -1,6 +1,6 @@
 # Disease surveillance aggregate system design { #idsr-aggregate-design }
 
-Draft version, last updated 2020-05-29
+Last updated 2022-05-09
 
 ## Introduction
 
@@ -10,7 +10,9 @@ This document describes the system design for the aggregate disease surveillance
 2. Data Sets
 3. Data Exchange Mechanisms
 4. Dashboards
-5. Validation Rules and Notifications
+5. Predictors
+6. Validation Rules 
+7. Validation Notifications
 
 The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration and to reduce conflicts when performing data exchange. This also allows countries to select the configuration options that are most relevant to their context.
 
@@ -35,15 +37,13 @@ The surveillance configuration package for aggregate reporting contains 6 datase
 | **Name**                                                     | **Periodicity** | **Purpose**                                                  |
 | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
 | IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. This data is disaggregated. |
-| IDSR - Report: Suspected, Confirmed, Death (no disaggregations) | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. This data set is not disaggregated. |
 | IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases deaths. This data is disaggregated. |
-| IDSR - Report: Suspected, Death (no disaggregations)         | Weekly          | Reporting of surveillance activities: suspected cases deaths. This data is not disaggregated. |
 | IDSR - Aggregate Lab Weekly Report                           | Weekly          | Reporting of confirmed cases directly from labs. This data is not disaggregated. |
 | Population Weekly                                            | Weekly          | Weekly population data used for alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). |
 
 ### IDSR - Report: Suspected, Confirmed, Death
 
-The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deathsand the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and require to be grouped together.
+The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and require to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -54,15 +54,7 @@ Disaggregations have been applied using the category model within DHIS2. This mo
 
 ![image-20200719115354457](resources/images/Screen14.png)
 
-The disaggregated dataset has been identified as the ideal configuration as
-
-### IDSR - Report: Suspected, Confirmed, Death (no disaggregations)
-
-This dataset contains all of the _**exact same data elements**_ as the _**IDSR - Report: Suspected, Confirmed, Death**_ dataset; however it _**does not contain any disaggregations**_. The data elements in this dataset use the _**category combination override**_ function in DHIS2 to allow for data elements to be associated with multiple disaggregations based on the data set they are associated with. This is a _**section based**_ dataset as no custom form was required.
-
-![image-20200719115621207](resources/images/Screen31.png)
-
-The main purpose of this dataset was to more easily allow compatibility with country systems that are importing data into the regional WHO AFRO disease surveillance data warehouse. This dataset will allow countries that do not have disaggregations to more easily import their data into the regional warehouse.
+The disaggregated dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information. This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases. If it is the case where you are **not** yet collecting data on confirmed cases, or you want seperate groups to have the ability to **edit** lab and suspected case data, then this may not be the dataset to implement in your setting.
 
 ### IDSR - Report: Suspected, Death
 
@@ -70,15 +62,11 @@ The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspec
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
-### IDSR - Report: Suspected, Death (no disaggregations)
-
-The _**IDSR - Report: Suspected, Death (no disaggregations)**_ dataset contains information on suspected cases and deaths for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on confirmed cases**_. It contains all of the same variables as the _**IDSR - Aggregate Weekly Report (Suspected - Death)**_ data set. This was done in the event the lab confirmation was a separate process and therefore links to the _**IDSR - Aggregate Lab Weekly Report**_ in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained on the _ **IDSR - Report: Suspected, Confirmed, Death** __**(no disaggregations)**_ dataset for cases and deaths. It uses a _ **section based design** _ as this is easier to maintain and translate over time and no custom form is needed based on its requirements.
-
-![image-20200719115703799](resources/images/Screen50.png)
-
 ### IDSR - Aggregate Lab Weekly Report
 
 The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ - either the non disaggregated or disaggregated version - when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. The data elements used for confirmed cases
+
+### Population Weekly
 
 ## Data Exchange Mechanisms
 
