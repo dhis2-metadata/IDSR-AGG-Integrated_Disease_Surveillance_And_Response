@@ -14,7 +14,7 @@ This document describes the system design for the aggregate disease surveillance
 6. Validation Rules 
 7. Validation Notifications
 
-The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration and to reduce conflicts when performing data exchange. This also allows countries to select the configuration options that are most relevant to their context.
+The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration in their own context. This also allows countries to select the configuration options that are most relevant to their context.
 
 ## Diseases Covered
 
@@ -36,14 +36,14 @@ The surveillance configuration package for aggregate reporting contains 6 datase
 
 | **Name**                                                     | **Periodicity** | **Purpose**                                                  |
 | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
-| IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. This data is disaggregated. |
-| IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases deaths. This data is disaggregated. |
+| IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. Suspected cases and deaths are disaggregated, confirmed case data is not disaggregated. |
+| IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases and deaths. This data is disaggregated. |
 | IDSR - Aggregate Lab Weekly Report                           | Weekly          | Reporting of confirmed cases directly from labs. This data is not disaggregated. |
 | Population Weekly                                            | Weekly          | Weekly population data used for alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). |
 
 ### IDSR - Report: Suspected, Confirmed, Death
 
-The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and require to be grouped together.
+The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -54,19 +54,31 @@ Disaggregations have been applied using the category model within DHIS2. This mo
 
 ![image-20200719115354457](resources/images/Screen14.png)
 
-The disaggregated dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information. This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases. If it is the case where you are **not** yet collecting data on confirmed cases, or you want seperate groups to have the ability to **edit** lab and suspected case data, then this may not be the dataset to implement in your setting.
+If you need to modify this dataset so it is not disaggregated by age, you can do so directly before or after installation. It would be the recommended approach to do this before installation by following steps within the installation guide on modifying the package. 
+
+This dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information (ie. enter data and modify existing data values). This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases. 
+
+In summary, if it is the case where you are ***not yet collecting data*** on confirmed cases or ***you want seperate groups to have the ability to edit*** suspected and confirmed case data, then this may not be the dataset to implement in your context. If ***you are collecting data*** on confirmed cases, and you want ***equal access for all users to edit*** the suspected and confirmed case data, then this type of dataset design would be suitable to implement in your own context. 
 
 ### IDSR - Report: Suspected, Death
 
-The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in [Table 1](#table-1). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process and and therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
+The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in [Table 1](#table-1). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process, or that seperate access is to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
+This dataset is meant for settings where either
+1. Data on confirmed cases is not yet being collected through DHIS2
+2. Data on confirmed cases is being collected, but is either a seperate process or access to edit this data needs to be seperated
+
 ### IDSR - Aggregate Lab Weekly Report
 
-The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ - either the non disaggregated or disaggregated version - when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. The data elements used for confirmed cases
+The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want to have different users have the ability to edit confirmed case data when compared to suspected cases/death data.
 
 ### Population Weekly
+
+The Population weekly dataset is used in comparison to send out alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
+
+As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000.
 
 ## Data Exchange Mechanisms
 
@@ -77,7 +89,7 @@ There are two data exchange mechanisms that are available:
 
 ### DHIS2 to DHIS2 data exchange
 
-As part of this package, an app called &quot;data transfer&quot; has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system). The configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
+As part of this package, an app called &quot;data transfer&quot; has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
 
 1. The actual data being sent (ie. the variables/data items)
 2. The location of the data being sent (ie. in DHIS2 the organization units)
