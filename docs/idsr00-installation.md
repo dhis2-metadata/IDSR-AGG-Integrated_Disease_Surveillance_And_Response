@@ -425,6 +425,12 @@ If you want to send out the validation notifications, ensure that the "Send noti
 
 ![send_notification](resources/images/installation_guide/send_notification_scheduler.png)
 
+### Sending out notifications
+
+By default, notifications will be sent out to via the DHIS2 messaging app.
+
+In order to send out notifications via SMS or e-mail, you will need an [SMS gateway](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html#sms-configuration-gateways) and/or an [e-mail configuration](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) set up within your DHIS2 instance. These will vary between implementaitons and it is best to consult the documentation links provided here for more information.
+
 ### Duplicated metadata
 
 > **NOTE**
@@ -444,8 +450,9 @@ Once the program has been imported, you might want to make certain modifications
 - Adapting data element names according to national conventions.
 - Adding translations to variables and/or the data entry form.
 - Modifying indicators based on local case definitions
+- Adding dashboards/dashboard items
 
-However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example program rules and program indicators.
+However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example predictors or notifications. 
 
 ## Removing metadata
 
