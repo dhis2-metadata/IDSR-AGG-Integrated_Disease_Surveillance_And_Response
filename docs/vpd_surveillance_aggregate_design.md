@@ -13,26 +13,26 @@ This document describes the system design for the aggregate disease surveillance
 5. Predictors
 6. Validation Rules 
 7. Validation Notifications
+8. Considerations when adding an additional disease
 
 The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration in their own context. This also allows countries to select the configuration options that are most relevant to their context.
 
 ## Diseases Covered
 
-The diseases covered in this package are outlined in [Table 1](#table-1)
+The diseases covered in this package are as follows:
 
-### Table 1
-
-Diseases in the vaccine preventable disease surveillance package
-
-| Acute Flaccid Paralysis | Acute Watery Diarrhoea  | Cholera      | Dengue Fever |
+||||| 
 | ----------------------- | ----------------------- | ------------ | ------------ |
-| Diarrhoea with Blood    | Diptheria               | Measles      | Meningitis   |
+| Acute Flaccid Paralysis | Acute Watery Diarrhoea  | Cholera      | Dengue Fever |
+| Diarrhoea with Blood (Shigella)    | Diptheria               | Measles      | Meningitis   |
 | Neonatal Tetanus        | Non Neonatal Tetanus    | Pertussis    | Rabies       |
 | Rubella                 | Viral Hemorrhagic Fever | Yellow Fever |              |
 
+Note that you are able to add a disease to the design as needed.
+
 ## Data Set Overview
 
-The surveillance configuration package for aggregate reporting contains 6 datasets described in [Table 1](#table-1). Note that the datasets contain the same data elements for their reporting areas; however have copies that are both disaggregated and not disaggregated or divided into smaller sections depending on country design in order to be compatible with the importing of data into DHIS2. The disaggregated data sets are the ideal configuration that countries can move toward, while the non-disaggregated data sets may be what countries have in practice currently.
+The surveillance configuration package for aggregate reporting contains 4 datasets described below.
 
 | **Name**                                                     | **Periodicity** | **Purpose**                                                  |
 | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
@@ -76,7 +76,7 @@ The IDSR Aggregate Lab Weekly report contains information on confirmed cases for
 
 ### Population Weekly
 
-The Population weekly dataset is used in comparison to send out alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
+The Population weekly dataset is used in comparisons to send out alerts for ***meningitis  ***. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
 
 As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000.
 
