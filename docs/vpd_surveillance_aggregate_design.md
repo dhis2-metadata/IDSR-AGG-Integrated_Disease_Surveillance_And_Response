@@ -152,11 +152,11 @@ Dashboards for each of the diseases listed [above](#diseases-covered) are availa
 
 ## Validation Rules
 
-Validation rules have been implemented, including both logical checks of consistency as well as in order to notify individuals of potential confirmed cases, alerts and outbreaks by sending a message from the DHIS2 system when certain criteria are met. These messages can be sent via e-mail, SMS and/or using the DHIS2 internal messaging system. 
+Validation rules have been implemented, including both logical checks of consistency as well to detect susepcted and confirmed outbreaks based on various criteria.
 
 ### Validation Rules - Consistency Checks
 
-Validation rules that perform consistency checks are comparing weekly confirmed cases with weekly suspected cases. The assumption is that confirmed cases should be less than or equal to suspected cases within a given week for all diseases listed in the [diseases covered section](#diseases-covered). For a full list of these validation rules, please refer to the metadata reference file. If this assumption is not correct within your implementation, you will want to modify these as they will appear during data entry whenever a user completes a data set and a violation is detected as we can see in the example below.
+Validation rules that perform consistency checks are comparing weekly confirmed cases with weekly suspected cases. The assumption is that confirmed cases should be less than or equal to suspected cases within a given week for all diseases listed in the [diseases covered](#diseases-covered) section. For a full list of these validation rules, please refer to the metadata reference file. If this assumption is not correct within your implementation, you will want to modify these as they will appear during data entry whenever a user completes a data set and a violation is detected as we can see in the example below.
 
 ![consistency_validation](resources/images/consitency_rule.png)
 
@@ -183,7 +183,7 @@ The following validation rules are triggered and send a notification based on th
 | Suspected Neonatal Tetanus                                   | 1 suspected case                                            | No |
 | Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 | Yes <br> `IDSR - Meningitis alert` |
 | Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             | No |
-| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old | Yes|
+| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old | No|
 | Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 | Yes <br> `IDSR - Meningitis outbreak` |
 | One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               | No |
 | Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |No |
