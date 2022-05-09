@@ -43,7 +43,7 @@ The surveillance configuration package for aggregate reporting contains 4 datase
 
 ### IDSR - Report: Suspected, Confirmed, Death
 
-The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
+The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -62,7 +62,7 @@ In summary, if it is the case where you are ***not yet collecting data*** on con
 
 ### IDSR - Report: Suspected, Death
 
-The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in [Table 1](#table-1). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process, or that seperate access is to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
+The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process, or that seperate access is to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
@@ -123,7 +123,7 @@ Once the data has been reviewed and verified from the Excel sheet, it can be imp
 
 ## Dashboards
 
-Dashboards for each of the diseases listed in [Table 1](#table-1) are available. Each disease specific dashboard follows the same layout:
+Dashboards for each of the diseases listed [above](#diseases-covered) are available. Each disease specific dashboard follows the same layout:
 
 1. Pivot table showing suspected outbreak areas in the last 12 weeks
 2. Map showing suspected outbreak areas in the last week
@@ -146,7 +146,7 @@ Dashboards for each of the diseases listed in [Table 1](#table-1) are available.
 
 ![dashboard_3](resources/images/dashboard_3.png)
 
-13. A comparison of cases by week of this year and last year
+13. A comparison of cases by weeks of this year and last year
 
 ![dashboard_4](resources/images/dashboard_4.png)
 
