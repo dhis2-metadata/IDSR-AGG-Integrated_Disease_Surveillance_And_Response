@@ -10,9 +10,9 @@ This document describes the system design for the aggregate disease surveillance
 2. Data Sets
 3. Data Exchange Mechanisms
 4. Dashboards
-5. Predictors
-6. Validation Rules 
-7. Validation Notifications
+5. Validation Rules 
+6. Validation Notifications
+7. Predictors
 8. Considerations when adding an additional disease
 
 The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration in their own context. This also allows countries to select the configuration options that are most relevant to their context.
@@ -150,35 +150,46 @@ Dashboards for each of the diseases listed [above](#diseases-covered) are availa
 
 ![dashboard_4](resources/images/dashboard_4.png)
 
+## Validation Rules
 
-## Validation Rules and Notifications
+Validation rules have been implemented, including both logical checks of consistency as well as in order to notify individuals of potential confirmed cases, alerts and outbreaks by sending a message from the DHIS2 system when certain criteria are met. These messages can be sent via e-mail, SMS and/or using the DHIS2 internal messaging system. 
 
-Validation rules have been implemented in order to notify individuals of potential confirmed cases, alerts and outbreaks by sending a message from the DHIS2 system when certain criteria are met. These messages can be sent via e-mail, SMS and/or using the DHIS2 internal messaging system. The following validation rules are triggered and sent a notification based on the criteria specified below:
+### Validation Rules - Consistency Checks
 
-| Name                                                         | Description/Notification Trigger                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Suspected Non Neonatal Tetanus                               | 1 suspected case                                             |
-| Probable Yellow Fever                                        | 1 case with IgM positive                                     |
-| Confirmed Rubella                                            | 1 confirmed case                                             |
-| Cholera RDT positive                                         | 1 case RDT positive                                          |
-| Suspected Plague                                             | 1 suspected case                                             |
-| Confirmed Rabies                                             | 1 confirmed case                                             |
-| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |
-| Confirmed Anthrax                                            | 1 confirmed case                                             |
-| Confirmed Dengue Fever                                       | 1 confirmed case                                             |
-| Suspected Pertussis                                          | 1 suspected case                                             |
-| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |
-| Two or more Acute Watery Diarrhea (AWD) aged 2 years and older (linked by time and place) with severe dehydration or dying | 2 or more AWD aged 2 years + (linked by time and place) with severe dehydration or dying |
-| Suspected Neonatal Tetanus                                   | 1 suspected case                                             |
-| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 |
-| Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             |
-| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old |
-| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 |
-| One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               |
-| Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |
-| Suspected Diptheria                                          | 1 suspected case                                             |
-| Confirmed AFP (WPV)                                          | 1 confirmed case                                             |
-| Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |
+Validation rules that perform consistency checks are comparing weekly confirmed cases with weekly suspected cases. The assumption is that confirmed cases should be less than or equal to suspected cases within a given week for all diseases listed in the [diseases covered section](#diseases-covered). For a full list of these validation rules, please refer to the metadata reference file. If this assumption is not correct within your implementation, you will want to modify these as they will appear during data entry whenever a user completes a data set and a violation is detected as we can see in the example below.
+
+![consistency_validation](resources/images/consitency_rule.png)
+
+### Validation Rules - Thresholds
+
+Validation rules are also used to determine if a threshold has been surpassed. These validation rules are sometimes using the output of a predictor to make a comparison depending on the criteria that needs to be met. When these rules are violated, a notification is sent out. 
+
+The following validation rules are triggered and send a notification based on the criteria specified below:
+
+| Name                                                         | Description/Notification Trigger                             |Predictor Used|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |-----------| 
+| Suspected Non Neonatal Tetanus                               | 1 suspected case                                             |No |
+| Probable Yellow Fever                                        | 1 case with IgM positive                                     |No |
+| Confirmed Rubella                                            | 1 confirmed case                                             |No |
+| Cholera RDT positive                                         | 1 case RDT positive                                          |No |
+| Suspected Plague                                             | 1 suspected case                                             |No |
+| Confirmed Rabies                                             | 1 confirmed case                                             |No |
+| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |Yes <br>  `IDSR - Measles Suspected Outbreak` |
+| Confirmed Anthrax                                            | 1 confirmed case                                             |No |
+| Confirmed Dengue Fever                                       | 1 confirmed case                                             |No |
+| Suspected Pertussis                                          | 1 suspected case                                             |No |
+| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |Yes <br> `IDSR - Measles Confirmed Outbreak`|
+| Two or more Acute Watery Diarrhea (AWD) aged 2 years and older (linked by time and place) with severe dehydration or dying | 2 or more AWD aged 2 years + (linked by time and place) with severe dehydration or dying | No |
+| Suspected Neonatal Tetanus                                   | 1 suspected case                                            | No |
+| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 | Yes <br> `IDSR - Meningitis alert` |
+| Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             | No |
+| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old | Yes|
+| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 | Yes <br> `IDSR - Meningitis outbreak` |
+| One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               | No |
+| Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |No |
+| Suspected Diptheria                                          | 1 suspected case                                             |No |
+| Confirmed AFP (WPV)                                          | 1 confirmed case                                             |No |
+| Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |No |
 
 
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
