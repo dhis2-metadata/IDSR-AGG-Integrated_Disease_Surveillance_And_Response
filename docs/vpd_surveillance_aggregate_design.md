@@ -123,7 +123,7 @@ Once the data has been reviewed and verified from the Excel sheet, it can be imp
 
 ## Dashboards
 
-Dashboards for each of the diseases listed [above](#diseases-covered) are available. Each disease specific dashboard follows the same layout:
+Dashboards for each of the diseases listed within the [diseases covered](#diseases-covered) section are available. Each disease specific dashboard follows the same layout:
 
 1. Pivot table showing suspected outbreak areas in the last 12 weeks
 2. Map showing suspected outbreak areas in the last week
@@ -132,21 +132,21 @@ Dashboards for each of the diseases listed [above](#diseases-covered) are availa
 
 ![dashboard_1](resources/images/dashboard_1.png)
 
-5. Pivot table showing suspected outbreak areas in the last year
+5. Pivot table showing the total weeks an areas has been in suspected outbreak in the last year
 6. Map showing suspected outbreak areas in the last year
-7. Pivot table showing confirrmed outbreak areas in the last year
+7. Pivot table showing the total weeks an areas has been in confirmed outbreak in the last year
 8. Map showing confirmed outbreak areas in the last year
 
 ![dashboard_2](resources/images/dashboard_2.png)
 
 9. Map showing the incidence rate in the last week
-10. Map dhowing the distribution of cases in the last week
+10. Map showing the distribution of cases in the last week
 11. Chart showing the number of suspected cases and deaths in the last 12 weeks
 12. Pivot table showing the number of suspected cases and deaths in the last 12 weeks
 
 ![dashboard_3](resources/images/dashboard_3.png)
 
-13. A comparison of cases by weeks of this year and last year
+13. Chart showing a comparison of cases by weeks of this year and last year
 
 ![dashboard_4](resources/images/dashboard_4.png)
 
