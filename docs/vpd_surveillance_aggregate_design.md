@@ -205,7 +205,7 @@ For more information on configuring predictors, please consult [the documentatio
 
 ### Areas in outbreak
 
-Outside of predictors being used within validation rules, they are also used to visualize areas that are in outbreak. We can see examples of this in visualizations 1-8 within the [dashboard](#dashboards) section. While validation rules can be used to trigger validation notifications, the result of these rules is not stored in a data element and thus can not be used for visualization purposes. A full list of predictors can be found in the metadata reference file. Each disease has predictors that are labelled as either an "alert" -- used in situations where suspected cases are being checked; and "outbreak" -- used in situations where confirmed cases are being checked.
+Outside of predictors being used within validation rules, they are also used to visualize areas that are in outbreak. We can see examples of this in visualizations 1-8 within the [dashboards](#dashboards) section. While validation rules can be used to trigger validation notifications, the result of these rules is not stored in a data element and thus can not be used for visualization purposes. A full list of predictors can be found in the metadata reference file. Each disease has predictors that are labelled as either an "alert" -- used in situations where suspected cases are being checked; or an "outbreak" -- used in situations where confirmed cases are being checked.
 
 Predictors are defined to store values within companion data elements that can then be used to create visualizations to identify areas in alert or outbreak. The predictors are defined to identify alerts and outbreaks based on the [validation rules thresholds](#validation-rules---thresholds) section. Let us take an two predictors and break them down into its component parts, as each predictor for each disease will need to be understood to be correctly used or altered if needed.
 
@@ -254,15 +254,15 @@ We still have the same fields as in example 1 to start our predictor
 
 ![predictor_formula_11](resources/images/predictor_formula_11.png)
 
-After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
+After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using measles as our example, we have a logical test stating the following
 
 >If the sum of confirmed measles cases is greater then 3, return a value of 1. If this is not the case return a value of 0.
 
-Note that this sum is being taken from the level in which there is data, which in this example would be our facilities.
+Note that this sum is being taken from the level in which there is data, which in this example would be our facilities. Using the generator alone, we have also not met our second criteria which should examine this over a 30 day period.
 
 ![predictor_formula_12](resources/images/predictor_formula_12.png)
 
-The last components of the predictor identifies which period we will be getting data from to use within our generator. We have defined  the sequential sample count as 4 and the annual sample count as 0. This means that the generator will be obtaining data from the last 4 weeks, including the current week, for the current year in which the threshold is being checked. This is to meet the criteria of our 30 day period as defined in our threshold.
+The last components of the predictor identifies which period we will be getting data from to use within our generator. We have defined  the sequential sample count as 4 and the annual sample count as 0. This means that the generator will be obtaining data from the last 4 weeks (since the predictor period is set to weekly), including the current week, for the current year in which the threshold is being checked. This is to meet the criteria of our 30 day period as defined in our threshold.
 
 ![predictor_formula_13](resources/images/predictor_formula_13.png)
 
