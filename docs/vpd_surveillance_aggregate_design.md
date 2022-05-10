@@ -13,7 +13,6 @@ This document describes the system design for the aggregate disease surveillance
 5. Validation Rules 
 6. Validation Notifications
 7. Predictors
-8. Considerations when adding an additional disease
 
 The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration in their own context. This also allows countries to select the configuration options that are most relevant to their context.
 
@@ -62,7 +61,7 @@ In summary, if it is the case where you are ***not yet collecting data*** on con
 
 ### IDSR - Report: Suspected, Death
 
-The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process, or that seperate access is to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
+The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Lab Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
@@ -74,11 +73,13 @@ This dataset is meant for settings where either
 
 The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want to have different users have the ability to edit confirmed case data when compared to suspected cases/death data.
 
+Like the data sets `IDSR - Report: Suspected, Confirmed, Death` and `IDSR - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
+
 ### Population Weekly
 
-The Population weekly dataset is used in comparisons to send out alerts for ***meningitis  ***. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
+The Population weekly dataset is used to collect weekly population data. The main function of this is for thresholds for ***meningitis***. It is a weekly data set as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
 
-As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000.
+As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000 throughout the year within this district.
 
 ## Data Exchange Mechanisms
 
@@ -193,11 +194,25 @@ The following validation rules are triggered and send a notification based on th
 
 Note the differentiation between `suspected cases` and `confirmed cases.` In the context of the surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
 
+These rules can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.
+
 ## Validation Notifications
+
+In response to a threshold being surpassed, notifications can be sent out using any combination of 3 methods:
+
+- The internal messaging service within DHIS2
+- SMS
+- E-mail
+
+For more information on setting these services up, refer to the documentation on [email](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) and [SMS](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html). 
 
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
 
 ![image-20200719115221225](resources/images/Screen34.png)
+
+For a full list of validation notifications, consult the metadata reference file. Validation notifications are available for each disease based on the criteria defined in the [validation rules thresholds](#validation-rules---thresholds) section.
+
+These can be sent out in response to either a manual or automated process of checking your data. Configuration of the automated process is discussed within the installation guide.
 
 ## Predictors
 
@@ -276,3 +291,5 @@ The last components of the predictor identifies which period we will be getting 
 5. The sequential and annual sample counts, which will define which periods the predictor is obtaining data from
 
 Altering these components will allow you to alter the definition of the threshold.
+
+These predictors can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.
