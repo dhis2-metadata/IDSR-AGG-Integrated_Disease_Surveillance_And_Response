@@ -1,6 +1,6 @@
 # Disease surveillance aggregate system design { #idsr-aggregate-design }
 
-Last updated 2022-05-09
+Last updated 2022-05-10
 
 ## Introduction
 
@@ -191,7 +191,88 @@ The following validation rules are triggered and send a notification based on th
 | Confirmed AFP (WPV)                                          | 1 confirmed case                                             |No |
 | Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |No |
 
+Note the differentiation between `suspected cases` and `confirmed cases.` In the context of the surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
+
+## Validation Notifications
 
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
 
 ![image-20200719115221225](resources/images/Screen34.png)
+
+## Predictors
+
+For more information on configuring predictors, please consult [the documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/metadata.html#about-predictors).
+
+### Areas in outbreak
+
+Outside of predictors being used within validation rules, they are also used to visualize areas that are in outbreak. We can see examples of this in visualizations 1-8 within the [dashboard](#dashboards) section. While validation rules can be used to trigger validation notifications, the result of these rules is not stored in a data element and thus can not be used for visualization purposes. A full list of predictors can be found in the metadata reference file. Each disease has predictors that are labelled as either an "alert" -- used in situations where suspected cases are being checked; and "outbreak" -- used in situations where confirmed cases are being checked.
+
+Predictors are defined to store values within companion data elements that can then be used to create visualizations to identify areas in alert or outbreak. The predictors are defined to identify alerts and outbreaks based on the [validation rules thresholds](#validation-rules---thresholds) section. Let us take an two predictors and break them down into its component parts, as each predictor for each disease will need to be understood to be correctly used or altered if needed.
+
+#### Example 1: A disease where 1 suspected case is the threshold (ie. diptheria)
+
+Let us take an example in which 1 suspected case is the threshold to identify if an area is in alert. Note that this same nomenclature would apply to an example in which 1 confiremd case is the threshold to identify if an area is in outbreak.
+
+We can use the example for `diptheria`; if we review the [validation rules thresholds](#validation-rules---thresholds) section we will see one suspected case of diptheria is our threshold. 
+
+Within the predictor, we have the following fields:
+
+1. The name of the predictor
+2. The description of the predictor
+3. The output data element - this is where the result of the predictor is stored
+4. The period in which the predictor is running
+5. The output organisation unit level of the predictor value
+
+![predictor_formula_1](resources/images/predictor_formula_1.png)
+
+After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
+
+>If the number of suspected diptheria cases is >= 1 within a given org unit, return a value of 1. If this is not the case return a value of 0.
+
+These types of logical if statements are used in all of the predictors within this package. If you are not familiar with boolean logic, a broad overview can be found [here](https://www.lotame.com/what-is-boolean-logic/#:~:text=Boolean%20Logic%20is%20a%20form,are%20either%20true%20or%20false.).
+
+![predictor_formula_2](resources/images/predictor_formula_2.png)
+
+The last components of the predictor identify which period we will be getting data from to use within our generator. We have defined both the sequential sample count and annual sample count as 0. This means that the generator will only be obtaining data from the same week in which the threshold is being checked.
+
+![predictor_formula_3](resources/images/predictor_formula_3.png)
+
+#### Example 2: A disease where a specific threshold formula is used (ie. measles)
+
+In example 2, we can review the threshold for a ***confirmed measles outbreak***. This threshold is defined as `3 confirmed cases in one district in 30 days.` There are some key components that must be considered
+
+1. A total of 3 cases within the district 
+2. These cases can occur over a period of 30 days
+
+We still have the same fields as in example 1 to start our predictor
+
+1. The name of the predictor
+2. The description of the predictor
+3. The output data element - this is where the result of the predictor is stored
+4. The period in which the predictor is running
+5. The output organisation unit level of the predictor value
+
+![predictor_formula_11](resources/images/predictor_formula_11.png)
+
+After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
+
+>If the sum of confirmed measles cases is greater then 3, return a value of 1. If this is not the case return a value of 0.
+
+Note that this sum is being taken from the level in which there is data, which in this example would be our facilities.
+
+![predictor_formula_12](resources/images/predictor_formula_12.png)
+
+The last components of the predictor identifies which period we will be getting data from to use within our generator. We have defined  the sequential sample count as 4 and the annual sample count as 0. This means that the generator will be obtaining data from the last 4 weeks, including the current week, for the current year in which the threshold is being checked. This is to meet the criteria of our 30 day period as defined in our threshold.
+
+![predictor_formula_13](resources/images/predictor_formula_13.png)
+
+### Predictor Summary 
+
+**NB**: We use predictors to help us test our thresholds and store data values to identify areas in alert or outbreak. Areas in alert are based off thresholds using suspected cases, while areas in outbreak refer to thresholds using confirmed cases. To define these thresholds using a predictor we must consider
+1. The data element you will output the predictor value to
+2. The period in which the predictor will check data against
+3. The organisation unit level you will output the predictor value to
+4. The generator formula, which will test our data against a defined threshold
+5. The sequential and annual sample counts, which will define which periods the predictor is obtaining data from
+
+Altering these components will allow you to alter the definition of the threshold.
