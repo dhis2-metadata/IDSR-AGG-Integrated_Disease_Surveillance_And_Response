@@ -1,6 +1,6 @@
 # Disease surveillance aggregate system design { #idsr-aggregate-design }
 
-Draft version, last updated 2020-05-29
+Last updated 2022-05-10
 
 ## Introduction
 
@@ -10,40 +10,39 @@ This document describes the system design for the aggregate disease surveillance
 2. Data Sets
 3. Data Exchange Mechanisms
 4. Dashboards
-5. Validation Rules and Notifications
+5. Validation Rules 
+6. Validation Notifications
+7. Predictors
 
-The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration and to reduce conflicts when performing data exchange. This also allows countries to select the configuration options that are most relevant to their context.
+The aggregate surveillance package meta-data is provided in several different configurations to show countries possibilities for configuration in their own context. This also allows countries to select the configuration options that are most relevant to their context.
 
 ## Diseases Covered
 
-The diseases covered in this package are outlined in [Table 1](#table-1)
+The diseases covered in this package are as follows:
 
-### Table 1
-
-Diseases in the vaccine preventable disease surveillance package
-
-| Acute Flaccid Paralysis | Acute Watery Diarrhoea  | Cholera      | Dengue Fever |
+||||| 
 | ----------------------- | ----------------------- | ------------ | ------------ |
-| Diarrhoea with Blood    | Diptheria               | Measles      | Meningitis   |
+| Acute Flaccid Paralysis | Acute Watery Diarrhoea  | Cholera      | Dengue Fever |
+| Diarrhoea with Blood (Shigella)    | Diptheria               | Measles      | Meningitis   |
 | Neonatal Tetanus        | Non Neonatal Tetanus    | Pertussis    | Rabies       |
 | Rubella                 | Viral Hemorrhagic Fever | Yellow Fever |              |
 
+Note that you are able to add a disease to the design as needed.
+
 ## Data Set Overview
 
-The surveillance configuration package for aggregate reporting contains 6 datasets described in [Table 1](#table-1). Note that the datasets contain the same data elements for their reporting areas; however have copies that are both disaggregated and not disaggregated or divided into smaller sections depending on country design in order to be compatible with the importing of data into DHIS2. The disaggregated data sets are the ideal configuration that countries can move toward, while the non-disaggregated data sets may be what countries have in practice currently.
+The surveillance configuration package for aggregate reporting contains 4 datasets described below.
 
 | **Name**                                                     | **Periodicity** | **Purpose**                                                  |
 | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
-| IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. This data is disaggregated. |
-| IDSR - Report: Suspected, Confirmed, Death (no disaggregations) | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. This data set is not disaggregated. |
-| IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases deaths. This data is disaggregated. |
-| IDSR - Report: Suspected, Death (no disaggregations)         | Weekly          | Reporting of surveillance activities: suspected cases deaths. This data is not disaggregated. |
+| IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. Suspected cases and deaths are disaggregated, confirmed case data is not disaggregated. |
+| IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases and deaths. This data is disaggregated. |
 | IDSR - Aggregate Lab Weekly Report                           | Weekly          | Reporting of confirmed cases directly from labs. This data is not disaggregated. |
 | Population Weekly                                            | Weekly          | Weekly population data used for alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). |
 
 ### IDSR - Report: Suspected, Confirmed, Death
 
-The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in [Table 1](#table-1). A number of the diseases have _**disaggregated**_ suspected cases and deathsand the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and require to be grouped together.
+The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -54,31 +53,33 @@ Disaggregations have been applied using the category model within DHIS2. This mo
 
 ![image-20200719115354457](resources/images/Screen14.png)
 
-The disaggregated dataset has been identified as the ideal configuration as
+If you need to modify this dataset so it is not disaggregated by age, you can do so directly before or after installation. It would be the recommended approach to do this before installation by following steps within the installation guide on modifying the package. 
 
-### IDSR - Report: Suspected, Confirmed, Death (no disaggregations)
+This dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information (ie. enter data and modify existing data values). This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases. 
 
-This dataset contains all of the _**exact same data elements**_ as the _**IDSR - Report: Suspected, Confirmed, Death**_ dataset; however it _**does not contain any disaggregations**_. The data elements in this dataset use the _**category combination override**_ function in DHIS2 to allow for data elements to be associated with multiple disaggregations based on the data set they are associated with. This is a _**section based**_ dataset as no custom form was required.
-
-![image-20200719115621207](resources/images/Screen31.png)
-
-The main purpose of this dataset was to more easily allow compatibility with country systems that are importing data into the regional WHO AFRO disease surveillance data warehouse. This dataset will allow countries that do not have disaggregations to more easily import their data into the regional warehouse.
+In summary, if it is the case where you are ***not yet collecting data*** on confirmed cases or ***you want seperate groups to have the ability to edit*** suspected and confirmed case data, then this may not be the dataset to implement in your context. If ***you are collecting data*** on confirmed cases, and you want ***equal access for all users to edit*** the suspected and confirmed case data, then this type of dataset design would be suitable to implement in your own context. 
 
 ### IDSR - Report: Suspected, Death
 
-The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in [Table 1](#table-1). Note that it does not contain information on confirmed cases. This was done in the event the lab confirmation was a separate process and and therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Weekly Report dataset.
+The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Lab Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
-### IDSR - Report: Suspected, Death (no disaggregations)
-
-The _**IDSR - Report: Suspected, Death (no disaggregations)**_ dataset contains information on suspected cases and deaths for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on confirmed cases**_. It contains all of the same variables as the _**IDSR - Aggregate Weekly Report (Suspected - Death)**_ data set. This was done in the event the lab confirmation was a separate process and therefore links to the _**IDSR - Aggregate Lab Weekly Report**_ in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained on the _ **IDSR - Report: Suspected, Confirmed, Death** __**(no disaggregations)**_ dataset for cases and deaths. It uses a _ **section based design** _ as this is easier to maintain and translate over time and no custom form is needed based on its requirements.
-
-![image-20200719115703799](resources/images/Screen50.png)
+This dataset is meant for settings where either
+1. Data on confirmed cases is not yet being collected through DHIS2
+2. Data on confirmed cases is being collected, but is either a seperate process or access to edit this data needs to be seperated
 
 ### IDSR - Aggregate Lab Weekly Report
 
-The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ - either the non disaggregated or disaggregated version - when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. The data elements used for confirmed cases
+The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want to have different users have the ability to edit confirmed case data when compared to suspected cases/death data.
+
+Like the data sets `IDSR - Report: Suspected, Confirmed, Death` and `IDSR - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
+
+### Population Weekly
+
+The Population weekly dataset is used to collect weekly population data. The main function of this is for thresholds for ***meningitis***. It is a weekly data set as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
+
+As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000 throughout the year within this district.
 
 ## Data Exchange Mechanisms
 
@@ -89,7 +90,7 @@ There are two data exchange mechanisms that are available:
 
 ### DHIS2 to DHIS2 data exchange
 
-As part of this package, an app called &quot;data transfer&quot; has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system). The configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
+As part of this package, an app called `dhis2 transfer` has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
 
 1. The actual data being sent (ie. the variables/data items)
 2. The location of the data being sent (ie. in DHIS2 the organization units)
@@ -123,55 +124,172 @@ Once the data has been reviewed and verified from the Excel sheet, it can be imp
 
 ## Dashboards
 
-Dashboards for each of the diseases listed in [Table 1](#table-1) are available. Each disease specific dashboard follows the same layout:
+Dashboards for each of the diseases listed within the [diseases covered](#diseases-covered) section are available. Each disease specific dashboard follows the same layout:
 
-1. Pivot table showing outbreak areas in the last 12 weeks
-2. Map showing outbreak areas in the last week
-3. Pivot table showing the total number of outbreaks in the current year
-4. Map showing the total number of outbreaks this year
-![image-20200719120040175](resources/images/Screen55.png)
+1. Pivot table showing suspected outbreak areas in the last 12 weeks
+2. Map showing suspected outbreak areas in the last week
+3. Pivot table showing suspected outbreak areas in the last 12 weeks
+4. Map showing confirmed outbreak areas in the last week
 
-5. A map showing the incidence rate for the last week
+![dashboard_1](resources/images/dashboard_1.png)
 
-6. A map showing the number of cases for the last week
-![image-20200719120116437](resources/images/Screen04.png)
+5. Pivot table showing the total weeks an areas has been in suspected outbreak in the last year
+6. Map showing suspected outbreak areas in the last year
+7. Pivot table showing the total weeks an areas has been in confirmed outbreak in the last year
+8. Map showing confirmed outbreak areas in the last year
 
-7. A chart showing cases and deaths in the last 12 weeks
+![dashboard_2](resources/images/dashboard_2.png)
 
-8. A table showing cases and deaths in the last 12 weeks
-![image-20200719120142961](resources/images/Screen15.png)
+9. Map showing the incidence rate in the last week
+10. Map showing the distribution of cases in the last week
+11. Chart showing the number of suspected cases and deaths in the last 12 weeks
+12. Pivot table showing the number of suspected cases and deaths in the last 12 weeks
 
-9. Trend of suspected cases by week for this year and last year
-![image-20200719120202780](resources/images/Screen24.png)
+![dashboard_3](resources/images/dashboard_3.png)
 
-## Validation Rules and Notifications
+13. Chart showing a comparison of cases by weeks of this year and last year
 
-Validation rules have been implemented in order to notify individuals of potential confirmed cases, alerts and outbreaks by sending a message from the DHIS2 system when certain criteria are met. These messages can be sent via e-mail, SMS and/or using the DHIS2 internal messaging system. The following validation rules are triggered and sent a notification based on the criteria specified below:
+![dashboard_4](resources/images/dashboard_4.png)
 
-| Name                                                         | Description/Notification Trigger                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Suspected Non Neonatal Tetanus                               | 1 suspected case                                             |
-| Probable Yellow Fever                                        | 1 case with IgM positive                                     |
-| Confirmed Rubella                                            | 1 confirmed case                                             |
-| Cholera RDT positive                                         | 1 case RDT positive                                          |
-| Suspected Plague                                             | 1 suspected case                                             |
-| Confirmed Rabies                                             | 1 confirmed case                                             |
-| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |
-| Confirmed Anthrax                                            | 1 confirmed case                                             |
-| Confirmed Dengue Fever                                       | 1 confirmed case                                             |
-| Suspected Pertussis                                          | 1 suspected case                                             |
-| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |
-| Two or more Acute Watery Diarrhea (AWD) aged 2 years and older (linked by time and place) with severe dehydration or dying | 2 or more AWD aged 2 years + (linked by time and place) with severe dehydration or dying |
-| Suspected Neonatal Tetanus                                   | 1 suspected case                                             |
-| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 |
-| Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             |
-| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old |
-| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 |
-| One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               |
-| Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |
-| Suspected Diptheria                                          | 1 suspected case                                             |
-| Confirmed AFP (WPV)                                          | 1 confirmed case                                             |
-| Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |
+## Validation Rules
+
+Validation rules have been implemented, including both logical checks of consistency as well to detect susepcted and confirmed outbreaks based on various criteria.
+
+### Validation Rules - Consistency Checks
+
+Validation rules that perform consistency checks are comparing weekly confirmed cases with weekly suspected cases. The assumption is that confirmed cases should be less than or equal to suspected cases within a given week for all diseases listed in the [diseases covered](#diseases-covered) section. For a full list of these validation rules, please refer to the metadata reference file. If this assumption is not correct within your implementation, you will want to modify these as they will appear during data entry whenever a user completes a data set and a violation is detected as we can see in the example below.
+
+![consistency_validation](resources/images/consitency_rule.png)
+
+### Validation Rules - Thresholds
+
+Validation rules are also used to determine if a threshold has been surpassed. These validation rules are sometimes using the output of a predictor to make a comparison depending on the criteria that needs to be met. When these rules are violated, a notification is sent out. 
+
+The following validation rules are triggered and send a notification based on the criteria specified below:
+
+| Name                                                         | Description/Notification Trigger                             |Predictor Used|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |-----------| 
+| Suspected Non Neonatal Tetanus                               | 1 suspected case                                             |No |
+| Probable Yellow Fever                                        | 1 case with IgM positive                                     |No |
+| Confirmed Rubella                                            | 1 confirmed case                                             |No |
+| Cholera RDT positive                                         | 1 case RDT positive                                          |No |
+| Suspected Plague                                             | 1 suspected case                                             |No |
+| Confirmed Rabies                                             | 1 confirmed case                                             |No |
+| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |Yes <br>  `IDSR - Measles Suspected Outbreak` |
+| Confirmed Anthrax                                            | 1 confirmed case                                             |No |
+| Confirmed Dengue Fever                                       | 1 confirmed case                                             |No |
+| Suspected Pertussis                                          | 1 suspected case                                             |No |
+| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |Yes <br> `IDSR - Measles Confirmed Outbreak`|
+| Two or more Acute Watery Diarrhea (AWD) aged 2 years and older (linked by time and place) with severe dehydration or dying | 2 or more AWD aged 2 years + (linked by time and place) with severe dehydration or dying | No |
+| Suspected Neonatal Tetanus                                   | 1 suspected case                                            | No |
+| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 | Yes <br> `IDSR - Meningitis alert` |
+| Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             | No |
+| Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old | No|
+| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 | Yes <br> `IDSR - Meningitis outbreak` |
+| One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               | No |
+| Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |No |
+| Suspected Diptheria                                          | 1 suspected case                                             |No |
+| Confirmed AFP (WPV)                                          | 1 confirmed case                                             |No |
+| Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |No |
+
+Note the differentiation between `suspected cases` and `confirmed cases.` In the context of the surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
+
+These rules can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.
+
+## Validation Notifications
+
+In response to a threshold being surpassed, notifications can be sent out using any combination of 3 methods:
+
+- The internal messaging service within DHIS2
+- SMS
+- E-mail
+
+For more information on setting these services up, refer to the documentation on [email](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) and [SMS](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html). 
+
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
 
 ![image-20200719115221225](resources/images/Screen34.png)
+
+For a full list of validation notifications, consult the metadata reference file. Validation notifications are available for each disease based on the criteria defined in the [validation rules thresholds](#validation-rules---thresholds) section.
+
+These can be sent out in response to either a manual or automated process of checking your data. Configuration of the automated process is discussed within the installation guide.
+
+## Predictors
+
+For more information on configuring predictors, please consult [the documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/metadata.html#about-predictors).
+
+### Areas in outbreak
+
+Outside of predictors being used within validation rules, they are also used to visualize areas that are in outbreak. We can see examples of this in visualizations 1-8 within the [dashboards](#dashboards) section. While validation rules can be used to trigger validation notifications, the result of these rules is not stored in a data element and thus can not be used for visualization purposes. A full list of predictors can be found in the metadata reference file. Each disease has predictors that are labelled as either an "alert" -- used in situations where suspected cases are being checked; or an "outbreak" -- used in situations where confirmed cases are being checked.
+
+Predictors are defined to store values within companion data elements that can then be used to create visualizations to identify areas in alert or outbreak. The predictors are defined to identify alerts and outbreaks based on the [validation rules thresholds](#validation-rules---thresholds) section. Let us take an two predictors and break them down into its component parts, as each predictor for each disease will need to be understood to be correctly used or altered if needed.
+
+#### Example 1: A disease where 1 suspected case is the threshold (ie. diptheria)
+
+Let us take an example in which 1 suspected case is the threshold to identify if an area is in alert. Note that this same nomenclature would apply to an example in which 1 confiremd case is the threshold to identify if an area is in outbreak.
+
+We can use the example for `diptheria`; if we review the [validation rules thresholds](#validation-rules---thresholds) section we will see one suspected case of diptheria is our threshold. 
+
+Within the predictor, we have the following fields:
+
+1. The name of the predictor
+2. The description of the predictor
+3. The output data element - this is where the result of the predictor is stored
+4. The period in which the predictor is running
+5. The output organisation unit level of the predictor value
+
+![predictor_formula_1](resources/images/predictor_formula_1.png)
+
+After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
+
+>If the number of suspected diptheria cases is >= 1 within a given org unit, return a value of 1. If this is not the case return a value of 0.
+
+These types of logical if statements are used in all of the predictors within this package. If you are not familiar with boolean logic, a broad overview can be found [here](https://www.lotame.com/what-is-boolean-logic/#:~:text=Boolean%20Logic%20is%20a%20form,are%20either%20true%20or%20false.).
+
+![predictor_formula_2](resources/images/predictor_formula_2.png)
+
+The last components of the predictor identify which period we will be getting data from to use within our generator. We have defined both the sequential sample count and annual sample count as 0. This means that the generator will only be obtaining data from the same week in which the threshold is being checked.
+
+![predictor_formula_3](resources/images/predictor_formula_3.png)
+
+#### Example 2: A disease where a specific threshold formula is used (ie. measles)
+
+In example 2, we can review the threshold for a ***confirmed measles outbreak***. This threshold is defined as `3 confirmed cases in one district in 30 days.` There are some key components that must be considered
+
+1. A total of 3 cases within the district 
+2. These cases can occur over a period of 30 days
+
+We still have the same fields as in example 1 to start our predictor
+
+1. The name of the predictor
+2. The description of the predictor
+3. The output data element - this is where the result of the predictor is stored
+4. The period in which the predictor is running
+5. The output organisation unit level of the predictor value
+
+![predictor_formula_11](resources/images/predictor_formula_11.png)
+
+After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using measles as our example, we have a logical test stating the following
+
+>If the sum of confirmed measles cases is greater then 3, return a value of 1. If this is not the case return a value of 0.
+
+Note that this sum is being taken from the level in which there is data, which in this example would be our facilities. Using the generator alone, we have also not met our second criteria which should examine this over a 30 day period.
+
+![predictor_formula_12](resources/images/predictor_formula_12.png)
+
+The last components of the predictor identifies which period we will be getting data from to use within our generator. We have defined  the sequential sample count as 4 and the annual sample count as 0. This means that the generator will be obtaining data from the last 4 weeks (since the predictor period is set to weekly), including the current week, for the current year in which the threshold is being checked. This is to meet the criteria of our 30 day period as defined in our threshold.
+
+![predictor_formula_13](resources/images/predictor_formula_13.png)
+
+### Predictor Summary 
+
+**NB**: We use predictors to help us test our thresholds and store data values to identify areas in alert or outbreak. Areas in alert are based off thresholds using suspected cases, while areas in outbreak refer to thresholds using confirmed cases. To define these thresholds using a predictor we must consider
+1. The data element you will output the predictor value to
+2. The period in which the predictor will check data against
+3. The organisation unit level you will output the predictor value to
+4. The generator formula, which will test our data against a defined threshold
+5. The sequential and annual sample counts, which will define which periods the predictor is obtaining data from
+
+Altering these components will allow you to alter the definition of the threshold.
+
+These predictors can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.

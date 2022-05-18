@@ -311,7 +311,7 @@ The steps to prepare the predictors for import are described below:
 
 All validation rules included in the package are listed in the metadata reference file.
 
-The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance before importing the package.
+The organisation unit groups for all validation rules are set to the district level. The district level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `3` by default. Adjust these levels in the metadata file to match the district level in the target instance before importing the package.
 
 ### Validation rule notifications { #idsr-validation-notifications }
 
@@ -401,7 +401,7 @@ A couple tips for each job type:
 
 #### Predictor
 
-Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most recent period that you need data for is the recommended approach.  
+Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values that are still valid). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most recent period that you need data for is the recommended approach.  
 
 You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDSR.` If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
 
@@ -419,13 +419,19 @@ Similar to the predictor, the monitoring job also consists of a relative start a
 
 You will need multiple monitoring jobs that run during different periods. This is because some of the validation rules for checking thresholds are meant to review a 30-day window while some are meant to be run weekly.
 
-You can specify validation rule groups for the monitoring job. You can therefore two monitoring jobs:
+You can specify validation rule groups for the monitoring job. You can therefore create two monitoring jobs:
 1. Create one job that runs weekly, using the validation rule group `IDSR - Weekly`
 2. Create one job that runs daily including a window of the last 30 days, using the validation rule group `IDSR - 30 days.` The rules in this group are checking your validation over a 30 day window. As this window updates daily, you will also need to run this job daily.
 
 If you want to send out the validation notifications, ensure that the "Send notifications" item is selected.
 
 ![send_notification](resources/images/installation_guide/send_notification_scheduler.png)
+
+### Sending out notifications
+
+By default, notifications will be sent out to via the DHIS2 messaging app.
+
+In order to send out notifications via SMS or e-mail, you will need an [SMS gateway](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html#sms-configuration-gateways) and/or an [e-mail configuration](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) set up within your DHIS2 instance. These will vary between implementaitons and it is best to consult the documentation links provided here for more information.
 
 ### Duplicated metadata
 
@@ -446,8 +452,9 @@ Once the program has been imported, you might want to make certain modifications
 - Adapting data element names according to national conventions.
 - Adding translations to variables and/or the data entry form.
 - Modifying indicators based on local case definitions
+- Adding dashboards/dashboard items
 
-However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example program rules and program indicators.
+However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example predictors or notifications. 
 
 ## Removing metadata
 
