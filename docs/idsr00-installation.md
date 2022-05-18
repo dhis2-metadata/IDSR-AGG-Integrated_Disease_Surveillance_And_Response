@@ -317,7 +317,9 @@ The organisation unit groups for all validation rules are set to facility level.
 
 All validation notifications included in the package are listed in the metadata reference file.
 
-Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY` within the metadata file if you would like to change this strategy before importing the package. Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting.
+Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY` within the metadata file if you would like to change this strategy before importing the package. 
+
+***NB: Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting***.
 
 ## Importing metadata
 
