@@ -191,7 +191,7 @@ The following validation rules are triggered and send a notification based on th
 | Confirmed AFP (WPV)                                          | 1 confirmed case                                             |No |
 | Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |No |
 
-Note the differentiation between `suspected cases` and `confirmed cases.` In the context of the surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
+Note the differentiation between `suspected cases` and `confirmed cases.` In the context of this surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
 
 These rules can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.
 
@@ -221,7 +221,7 @@ For more information on configuring predictors, please consult [the documentatio
 
 Outside of predictors being used within validation rules, they are also used to visualize areas that are in outbreak. We can see examples of this in visualizations 1-8 within the [dashboards](#dashboards) section. While validation rules can be used to trigger validation notifications, the result of these rules is not stored in a data element and thus can not be used for visualization purposes. A full list of predictors can be found in the metadata reference file. Each disease has predictors that are labelled as either an "alert" -- used in situations where suspected cases are being checked; or an "outbreak" -- used in situations where confirmed cases are being checked.
 
-Predictors are defined to store values within companion data elements that can then be used to create visualizations to identify areas in alert or outbreak. The predictors are defined to identify alerts and outbreaks based on the [validation rules thresholds](#validation-rules---thresholds) section. Let us take an two predictors and break them down into its component parts, as each predictor for each disease will need to be understood to be correctly used or altered if needed.
+Predictors are defined to store values within companion data elements that can then be used to create visualizations to identify areas in alert or outbreak. The predictors are defined to identify alerts and outbreaks based on the [validation rules thresholds](#validation-rules---thresholds) section. Let us take two predictors and break them down into its component parts, as each predictor for each disease will need to be understood to be correctly used or altered if needed.
 
 #### Example 1: A disease where 1 suspected case is the threshold (ie. diptheria)
 
