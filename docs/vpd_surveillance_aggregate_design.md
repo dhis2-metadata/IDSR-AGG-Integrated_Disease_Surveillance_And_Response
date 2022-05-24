@@ -95,32 +95,31 @@ As part of this package, an app called `dhis2 transfer` has been developed in or
 1. The actual data being sent (ie. the variables/data items)
 2. The location of the data being sent (ie. in DHIS2 the organization units)
 
-This matching is necessary as the two systems exchanging data may not exactly be aligned in terms of the names, codes or IDs it uses to identify these different objects that are being synchronized across the two systems.
+This matching is necessary as the two systems exchanging data may not exactly be aligned in terms of the names, codes or IDs it uses to identify these different objects that are being synchronized across the two systems. The app currently sends aggregate data via aggregate indicators from the source system to data elements within the destination system, so relevant indicators will need to be available from within the source system (ie. the system sending the data)
 
-An example of this configuration matching variables is shown below:
+An example of matching variables is shown below:
 
 ![image-20200719115734072](resources/images/Screen02.png)
 
-Once this configuration is saved you can:
+Once this configuration is saved you can call on it as needed, select the period you want to send data for and send the data.
 
-1. Select the data that you want to send
-![image-20200719115845651](resources/images/Screen11.png)
+![confirm_transfer](resources/images/Screen11.png)
 
-2. Select the period and locations of the data you want to send
-![image-20200719115936786](resources/images/Screen21.png)
+***NB: Note that this process can also be scheduled if you want to send the data automatically***
 
-3. Send the data
-![image-20200719115954834](resources/images/Screen33.png)
+For more information on the data transfer app, please refer to the app's manual. 
 
 ### Excel to DHIS2 data exchange
 
-As part of this package, an app called "data import wizard"; has been developed in order for a DHIS2 system to receive Excel data. This tool also needs to be configured once with the mapping matching the information in the Excel sheet to the information available in DHIS2.
+As part of this package, an app called "data import wizard"; has been made available in order for a DHIS2 system to receive Excel data. This tool also needs to be configured once with the mapping matching the information in the Excel sheet to the information available in DHIS2.
 
 You can preview the data that is being brought into the system to verify the mapping from the Excel file is correct as shown below.
 
 ![image-20200719120021592](resources/images/Screen44.png)
 
 Once the data has been reviewed and verified from the Excel sheet, it can be imported directly into the DHIS2 system.
+
+For more information on the data import wizard app, please refer to the app's manual.
 
 ## Dashboards
 
