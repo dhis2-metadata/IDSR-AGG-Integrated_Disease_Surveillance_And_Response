@@ -378,8 +378,8 @@ The users are assigned to the appropriate user group based on their role within 
 
 Users will need user roles in order to engage with the various applications within DHIS2. The following minimum roles are recommended:
 
-1. Tracker data analysis : Can see event analytics and access dashboards, event reports, event visualizer, data visualizer, pivot tables, reports and maps.
-2. Tracker data capture : Can add data values, update tracked entities, search tracked entities across org units and access tracker capture
+1. Aggregate data analysis : Can access dashboards, data visualizer, pivot tables, reports and maps.
+2. Aggregate data capture : Can acccess the data entry app and add/modify data values,
 
 Refer to the [DHIS2 Documentation](https://docs.dhis2.org/) for more information on configuring user roles.
 
@@ -417,11 +417,7 @@ This needs to be second job in your sequence, and should finish before the next 
 
 Similar to the predictor, the monitoring job also consists of a relative start and end date. If your data is not changing during previous periods, you can run the monitoring job only for the period you need to review.
 
-You will need multiple monitoring jobs that run during different periods. This is because some of the validation rules for checking thresholds are meant to review a 30-day window while some are meant to be run weekly.
-
-You can specify validation rule groups for the monitoring job. You can therefore create two monitoring jobs:
-1. Create one job that runs weekly, using the validation rule group `IDSR - Weekly`
-2. Create one job that runs daily including a window of the last 30 days, using the validation rule group `IDSR - 30 days.` The rules in this group are checking your validation over a 30 day window. As this window updates daily, you will also need to run this job daily.
+You can specify validation rule groups for the monitoring job. Create one monitoring job that runs weekly, using the validation rule group `IDSR - Weekly`
 
 If you want to send out the validation notifications, ensure that the "Send notifications" item is selected.
 
@@ -431,7 +427,7 @@ If you want to send out the validation notifications, ensure that the "Send noti
 
 By default, notifications will be sent out to via the DHIS2 messaging app.
 
-In order to send out notifications via SMS or e-mail, you will need an [SMS gateway](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html#sms-configuration-gateways) and/or an [e-mail configuration](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) set up within your DHIS2 instance. These will vary between implementaitons and it is best to consult the documentation links provided here for more information.
+In order to send out notifications via SMS or e-mail, you will need an [SMS gateway](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html#sms-configuration-gateways) and/or an [e-mail configuration](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) set up within your DHIS2 instance. The settings necessary for these will vary between implementations and it is best to consult the documentation links provided here for more information.
 
 ### Duplicated metadata
 
