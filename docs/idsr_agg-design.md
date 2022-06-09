@@ -111,7 +111,7 @@ For more information on the data transfer app, please refer to the app's manual.
 
 ### Excel to DHIS2 data exchange
 
-As part of this package, an app called "data import wizard"; has been made available in order for a DHIS2 system to receive Excel data. This tool also needs to be configured once with the mapping matching the information in the Excel sheet to the information available in DHIS2.
+As part of this package an app called "data import wizard" has been made available in order for a DHIS2 system to receive Excel data. This tool also needs to be configured once with the mapping matching the information in the Excel sheet to the information available in DHIS2. Note that this app can be used beyond surveillance use cases as well.  
 
 You can preview the data that is being brought into the system to verify the mapping from the Excel file is correct as shown below.
 
