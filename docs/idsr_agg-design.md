@@ -225,7 +225,7 @@ Predictors are defined to store values within companion data elements that can t
 
 #### Example 1: A disease where 1 suspected case is the threshold (ie. diptheria)
 
-Let us take an example in which 1 suspected case is the threshold to identify if an area is in alert. Note that this same nomenclature would apply to an example in which 1 confiremd case is the threshold to identify if an area is in outbreak.
+Let us take an example in which 1 suspected case is the threshold to identify if an area is in alert. Note that this same nomenclature would apply to an example in which 1 confirmed case is the threshold to identify if an area is in outbreak.
 
 We can use the example for `diptheria`; if we review the [validation rules thresholds](#validation-rules---thresholds) section we will see one suspected case of diptheria is our threshold. 
 
