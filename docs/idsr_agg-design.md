@@ -90,7 +90,7 @@ There are two data exchange mechanisms that are available in addition to using t
 
 ### DHIS2 to DHIS2 data exchange
 
-As part of this package, an app called `dhis2 transfer` has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
+As part of this package, an app called `dhis2 transfer` has been developed in order to push data from one DHIS2 system to another. Once this app is configured, it allows for one DHIS2 system to send its data to another DHIS2 system (for example, a regional system collecting data from several countries). The initial configuration only needs to occur once, and can be done completely through the available user interface. Configuration needs to occur for two separate elements:
 
 1. The actual data being sent (ie. the variables/data items)
 2. The location of the data being sent (ie. in DHIS2 the organization units)
