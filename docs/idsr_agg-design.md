@@ -132,7 +132,7 @@ Dashboards for each of the diseases listed within the [diseases covered](#diseas
 
 ![dashboard_1](resources/images/dashboard_1.png)
 
-5. Pivot table showing the total weeks an areas has been in suspected outbreak in the last year
+5. Pivot table showing the total weeks an area has been in suspected outbreak in the last year
 6. Map showing suspected outbreak areas in the last year
 7. Pivot table showing the total weeks an areas has been in confirmed outbreak in the last year
 8. Map showing confirmed outbreak areas in the last year
