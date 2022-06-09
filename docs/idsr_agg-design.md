@@ -83,10 +83,10 @@ As an example application of this, if your yearly population within District A i
 
 ## Data Exchange Mechanisms
 
-There are two data exchange mechanisms that are available:
+There are two data exchange mechanisms that are available in addition to using the DHIS2 API directly:
 
 1. For countries that are using DHIS2, an app for data exchange has been made to push data directly from their DHIS2 system to other DHIS2 systems
-2. For countries that are not using, an app for accepting data in Excel format has been made
+2. For countries that are not using DHIS2, an app for accepting data in Excel format has been made
 
 ### DHIS2 to DHIS2 data exchange
 
