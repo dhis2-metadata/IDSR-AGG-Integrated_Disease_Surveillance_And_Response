@@ -71,7 +71,7 @@ This dataset is meant for settings where either
 
 ### IDSR - Aggregate Lab Weekly Report
 
-The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want to have different users have the ability to edit confirmed case data when compared to suspected cases/death data.
+The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ dataset when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want different users to have the ability to edit confirmed case data when compared to suspected cases/death data.
 
 Like the data sets `IDSR - Report: Suspected, Confirmed, Death` and `IDSR - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
 
