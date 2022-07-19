@@ -105,7 +105,7 @@ Sort order can be adjusted in the Maintenance app.
 2. Open the "Options" section
 3. Use "SORT BY NAME", "SORT BY CODE/VALUE" or "SORT MANUALLY" alternatives.
 
-The IDSR package contains one option set and two options:
+The IDS package contains one option set and two options:
 
 ```json
 {
@@ -152,13 +152,13 @@ This Yes/No option set is based on "INTEGER_ZERO_OR_POSITIVE" option values that
 
 | Type         | Name                                                                                                    | UID           | Details                                                                              |
 |--------------|---------------------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------|
-| Data element | IDSR One death from severe AWD in a person > 5 years old                                                | `v2FeCwrKNt5` | Used in data sets: `m9yPuQEqxmS`, `ZyZmZTUwctj`                                      |
-| Data element | IDSR Two or more AWD aged 2 years and older (linked by time and place) with severe dehydration or dying | `ZOVJGcrCdCH` | Used in data sets: `m9yPuQEqxmS`, `ZyZmZTUwctj`                                      |
-| Predictor    | IDSR - Cholera/AWD Alert                                                                                | `nrJQj0Kxp03` | Generator: `if( #{ZOVJGcrCdCH}>= 1 || #{my2vljFIgT3}>= 1 || #{v2FeCwrKNt5}>= 1,1,0)` |
+| Data element | IDS One death from severe AWD in a person > 5 years old                                                | `v2FeCwrKNt5` | Used in data sets: `m9yPuQEqxmS`, `ZyZmZTUwctj`                                      |
+| Data element | IDS Two or more AWD aged 2 years and older (linked by time and place) with severe dehydration or dying | `ZOVJGcrCdCH` | Used in data sets: `m9yPuQEqxmS`, `ZyZmZTUwctj`                                      |
+| Predictor    | IDS - Cholera/AWD Alert                                                                                | `nrJQj0Kxp03` | Generator: `if( #{ZOVJGcrCdCH}>= 1 || #{my2vljFIgT3}>= 1 || #{v2FeCwrKNt5}>= 1,1,0)` |
 
 ### Population data
 
-The IDSR package includes data elements, indicators and other metadata objects that are related to **population** data.
+The IDS package includes data elements, indicators and other metadata objects that are related to **population** data.
 
 | Data element               | UID           |
 |----------------------------|---------------|
@@ -186,22 +186,22 @@ The package includes the following predictors:
 
 | Name                                              | UID           | Period type | Missing value strategy         | Output data element - name                        | Output data element - UID | Organisation unit levels |
 |--------------------------------------|---------------|-------------|--------------------------------|---------------------------------------------------|---------------------------|--------------------------|
-| IDSR - Acute Flacid Paralysis outbreak | `vclhob0deoe` | Weekly      | Skip if all values are missing | IDSR - Acute Flacid Paralysis outbreak            | `yCjneRUc565`             | District level           |
-| IDSR - Cholera/AWD Alert               | `nrJQj0Kxp03` | Weekly      | Skip if all values are missing | IDSR - Cholera/AWD Alert    | `k2hYvS8LTFl`             | District level           |
-| IDSR - Cholera outbreak                | `b64lroD7kZI` | Weekly      | Skip if all values are missing | IDSR - Cholera outbreak            | `fVYqPV4Yfuv`             | District level           |
-| IDSR - Dengue Fever Alert              | `r64RbaAOIri` | Weekly      | Skip if all values are missing | IDSR - Dengue Fever Alert           | `j3t0jhGOHhP`             | District level           |
-| IDSR - Diarrhoea with blood Alert      | `Frp6BqdLOsQ` | Weekly      | Skip if all values are missing | IDSR - Diarrhoea with blood Alert    | `ZYvr5OITjBa`             | District level           |
-| IDSR - Diphtheria Alert                | `eZad6JpXT0E` | Weekly      | Skip if all values are missing | IDSR - Diphtheria Alert              | `qFGp7kAZ5Me`             | District level           |
-| IDSR - Measles Confirmed Outbreak      | `sieOmlObW8L` | Weekly      | Skip if all values are missing | IDSR - Measles Confirmed Outbreak     | `Z1lCDUuuuHg`             | District level           |
-| IDSR - Measles Suspected Outbreak      | `C1ocEPMZUWn` | Weekly      | Skip if all values are missing | IDSR - Measles Suspected Outbreak | `mZ08SCurQVX`             | District level           |
-| IDSR - Meningites Alert                | `qN9hTkwE4Ye` | Weekly      | Skip if all values are missing | IDSR - Meningites Alert | `KNruIU8QeKP`             | District level           |
-| IDSR - Meningitis outbreak             | `HXBvKxWaujs` | Weekly      | Skip if all values are missing | IDSR - Meningitis outbreak | `I3570OWVcKN`             | District level           |
-| IDSR - Neonatal Tetanus Alert          | `iuNfzUx351B` | Weekly      | Skip if all values are missing | IDSR - Neonatal Tetanus Alert | `RGXZgVrOQyo`             | District level           |
-| IDSR - Non Neonatal tetanus Alert      | `SQ5BUEZpsgd` | Weekly      | Skip if all values are missing | IDSR - Non Neonatal tetanus Alert | `f45l3xKDAPs`             | District level           |
-| IDSR - Pertussis Alert                 | `BlwExnIXNEA` | Weekly      | Skip if all values are missing | IDSR - Pertussis Alert | `I5V4NUxtTre`             | District level           |
-| IDSR - Rabies Alert                    | `mdYA6Hfl2J4` | Weekly      | Skip if all values are missing | IDSR - Rabies Alert | `f3MTBlkGjZw`             | District level           |
-| IDSR - Viral Haemorragic Fever Alert   | `XhrFVuATU9L` | Weekly      | Skip if all values are missing | IDSR - Viral Haemorragic Fever Alert | `BSyp9DU4HWn`             | District level           |
-| IDSR - Yellow Fever Alert              | `hub5RjpxB7b` | Weekly      | Skip if all values are missing | IDSR - Yellow Fever Alert | `jUaZniVe1Uq`             | District level           |
+| IDS - Acute Flacid Paralysis outbreak | `vclhob0deoe` | Weekly      | Skip if all values are missing | IDS - Acute Flacid Paralysis outbreak            | `yCjneRUc565`             | District level           |
+| IDS - Cholera/AWD Alert               | `nrJQj0Kxp03` | Weekly      | Skip if all values are missing | IDS - Cholera/AWD Alert    | `k2hYvS8LTFl`             | District level           |
+| IDS - Cholera outbreak                | `b64lroD7kZI` | Weekly      | Skip if all values are missing | IDS - Cholera outbreak            | `fVYqPV4Yfuv`             | District level           |
+| IDS - Dengue Fever Alert              | `r64RbaAOIri` | Weekly      | Skip if all values are missing | IDS - Dengue Fever Alert           | `j3t0jhGOHhP`             | District level           |
+| IDS - Diarrhoea with blood Alert      | `Frp6BqdLOsQ` | Weekly      | Skip if all values are missing | IDS - Diarrhoea with blood Alert    | `ZYvr5OITjBa`             | District level           |
+| IDS - Diphtheria Alert                | `eZad6JpXT0E` | Weekly      | Skip if all values are missing | IDS - Diphtheria Alert              | `qFGp7kAZ5Me`             | District level           |
+| IDS - Measles Confirmed Outbreak      | `sieOmlObW8L` | Weekly      | Skip if all values are missing | IDS - Measles Confirmed Outbreak     | `Z1lCDUuuuHg`             | District level           |
+| IDS - Measles Suspected Outbreak      | `C1ocEPMZUWn` | Weekly      | Skip if all values are missing | IDS - Measles Suspected Outbreak | `mZ08SCurQVX`             | District level           |
+| IDS - Meningites Alert                | `qN9hTkwE4Ye` | Weekly      | Skip if all values are missing | IDS - Meningites Alert | `KNruIU8QeKP`             | District level           |
+| IDS - Meningitis outbreak             | `HXBvKxWaujs` | Weekly      | Skip if all values are missing | IDS - Meningitis outbreak | `I3570OWVcKN`             | District level           |
+| IDS - Neonatal Tetanus Alert          | `iuNfzUx351B` | Weekly      | Skip if all values are missing | IDS - Neonatal Tetanus Alert | `RGXZgVrOQyo`             | District level           |
+| IDS - Non Neonatal tetanus Alert      | `SQ5BUEZpsgd` | Weekly      | Skip if all values are missing | IDS - Non Neonatal tetanus Alert | `f45l3xKDAPs`             | District level           |
+| IDS - Pertussis Alert                 | `BlwExnIXNEA` | Weekly      | Skip if all values are missing | IDS - Pertussis Alert | `I5V4NUxtTre`             | District level           |
+| IDS - Rabies Alert                    | `mdYA6Hfl2J4` | Weekly      | Skip if all values are missing | IDS - Rabies Alert | `f3MTBlkGjZw`             | District level           |
+| IDS - Viral Haemorragic Fever Alert   | `XhrFVuATU9L` | Weekly      | Skip if all values are missing | IDS - Viral Haemorragic Fever Alert | `BSyp9DU4HWn`             | District level           |
+| IDS - Yellow Fever Alert              | `hub5RjpxB7b` | Weekly      | Skip if all values are missing | IDS - Yellow Fever Alert | `jUaZniVe1Uq`             | District level           |
 
 Predictor metadata includes organisation unit levels used for aggregation of data values. The package metadata file contains placeholders that need to be replaced with the UIDs of the corresponding organisation unit levels in the target database.
 
@@ -272,9 +272,9 @@ Please refer to the [DHIS2 documentation](#sharing) for more information on shar
 
 Three core user groups are included in the package:
 
-- IDSR access (view metadata/view data)
-- IDSR admin (view and edit metadata/no access to data)
-- IDSR alerts (view metadata/capture and view data)
+- IDS access (view metadata/view data)
+- IDS admin (view and edit metadata/no access to data)
+- IDS alerts (view metadata/capture and view data)
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in the package may be adjusted depending on the set up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more information.
 
@@ -307,7 +307,7 @@ A couple tips for each job type:
 
 Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values that are still valid). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most recent period that you need data for is the recommended approach.  
 
-You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDSR.` If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
+You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDS`. If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
 
 This needs to be the first job that starts in your sequence, and should finish before the next job (analytics) starts.
 
@@ -321,7 +321,7 @@ This needs to be second job in your sequence, and should finish before the next 
 
 Similar to the predictor, the monitoring job also consists of a relative start and end date. If your data is not changing during previous periods, you can run the monitoring job only for the period you need to review.
 
-You can specify validation rule groups for the monitoring job. Create one monitoring job that runs weekly, using the validation rule group `IDSR - Weekly`
+You can specify validation rule groups for the monitoring job. Create one monitoring job that runs weekly, using the validation rule group `IDS - Weekly`
 
 If you want to send out the validation notifications, ensure that the "Send notifications" item is selected.
 
