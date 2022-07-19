@@ -1,4 +1,4 @@
-# IDSR - Integrated Disease Surveillance and Response - Aggregate Installation Guide { #idsr-installation }
+# IDS - Integrated Disease Surveillance Installation Guide { #ids-installation }
 
 This document includes an installation guide for the IDSR aggregate package.
 
@@ -8,107 +8,11 @@ Available translations: French
 
 ## Overview
 
-### DHIS2.35
+The metadata reference and metadata json files provide technical details on package version and content. 
 
-=== "Complete package"
-
-    ```json
-    "package": {
-        "DHIS2Build": "81c0502",
-        "DHIS2Version": "2.35.12",
-        "code": "IDSR00",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "20220405T184357",
-        "locale": "en",
-        "name": "IDSR00_1.1.0_DHIS2.35.12-en",
-        "type": "AGG",
-        "version": "1.1.0"
-    }
-    ```
-
-=== "Dashboard package"
-
-    ```json
-    "package": {
-        "DHIS2Build": "81c0502",
-        "DHIS2Version": "2.35.12",
-        "code": "IDSRDB",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "20220405T184357",
-        "locale": "en",
-        "name": "IDSRDB_1.1.0_DHIS2.35.12-en",
-        "type": "DSH",
-        "version": "1.1.0"
-    }
-    ```
-
-### DHIS2.36
-
-=== "Complete package"
-
-    ```json
-    "package": {
-        "DHIS2Build": "5235548",
-        "DHIS2Version": "2.36.9",
-        "code": "IDSR00",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "20220406T105941",
-        "locale": "en",
-        "name": "IDSR00_1.1.0_DHIS2.36.9-en",
-        "type": "AGG",
-        "version": "1.1.0"
-    }
-    ```
-
-=== "Dashboard package"
-
-    ```json
-    "package": {
-        "DHIS2Build": "5235548",
-        "DHIS2Version": "2.36.9",
-        "code": "IDSRDB",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "20220405T184357",
-        "locale": "en",
-        "name": "IDSRDB_1.1.0_DHIS2.36.9-en",
-        "type": "DSH",
-        "version": "1.1.0"
-    }
-    ```
-
-### DHIS2.37
-
-=== "coming soon"
-
-    ```json
-    "package": {
-        "DHIS2Build": "---",
-        "DHIS2Version": "---",
-        "code": "IDSR00",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "---",
-        "locale": "en",
-        "name": "---",
-        "type": "AGG",
-        "version": "1.1.0"
-    }
-    ```
-
-=== "coming soon"
-
-    ```json
-    "package": {
-        "DHIS2Build": "---",
-        "DHIS2Version": "---",
-        "code": "IDSRDB",
-        "description": "Integrated Disease Surveillance and Response",
-        "lastUpdated": "---",
-        "locale": "en",
-        "name": "---",
-        "type": "AGG",
-        "version": "1.1.0"
-    }
-    ```
+The metadata package consists of the following modules:
+- Integrated Disease Surveillance
+- Integrated Disease Surveillance (dashboard)
 
 ## Installation
 
