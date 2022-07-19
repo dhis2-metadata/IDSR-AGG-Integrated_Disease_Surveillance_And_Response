@@ -1,6 +1,4 @@
-# Disease surveillance aggregate system design { #idsr-aggregate-design }
-
-Last updated 2022-05-10
+# Integrated Disease Surveillance aggregate system design { #ids-aggregate-design }
 
 ## Introduction
 
@@ -35,14 +33,14 @@ The surveillance configuration package for aggregate reporting contains 4 datase
 
 | **Name**                                                     | **Periodicity** | **Purpose**                                                  |
 | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
-| IDSR - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. Suspected cases and deaths are disaggregated, confirmed case data is not disaggregated. |
-| IDSR - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases and deaths. This data is disaggregated. |
-| IDSR - Aggregate Lab Weekly Report                           | Weekly          | Reporting of confirmed cases directly from labs. This data is not disaggregated. |
+| IDS - Report: Suspected, Confirmed, Death                   | Weekly          | Reporting of surveillance activities: suspected cases, confirmed cases and deaths. Suspected cases and deaths are disaggregated, confirmed case data is not disaggregated. |
+| IDS - Report: Suspected, Death                              | Weekly          | Reporting of surveillance activities: suspected cases and deaths. This data is disaggregated. |
+| IDS - Aggregate Lab Weekly Report                           | Weekly          | Reporting of confirmed cases directly from labs. This data is not disaggregated. |
 | Population Weekly                                            | Weekly          | Weekly population data used for alerts. It is weekly as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). |
 
-### IDSR - Report: Suspected, Confirmed, Death
+### IDS - Report: Suspected, Confirmed, Death
 
-The _**IDSR - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
+The _**IDS - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -59,9 +57,9 @@ This dataset assumes a mature configuration in which suspected cases, confirmed 
 
 In summary, if it is the case where you are ***not yet collecting data*** on confirmed cases or ***you want seperate groups to have the ability to edit*** suspected and confirmed case data, then this may not be the dataset to implement in your context. If ***you are collecting data*** on confirmed cases, and you want ***equal access for all users to edit*** the suspected and confirmed case data, then this type of dataset design would be suitable to implement in your own context. 
 
-### IDSR - Report: Suspected, Death
+### IDS - Report: Suspected, Death
 
-The _**IDSR - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDSR - Aggregate Lab Weekly Report dataset.
+The _**IDS - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDS - Aggregate Lab Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
@@ -69,11 +67,11 @@ This dataset is meant for settings where either
 1. Data on confirmed cases is not yet being collected through DHIS2
 2. Data on confirmed cases is being collected, but is either a seperate process or access to edit this data needs to be seperated
 
-### IDSR - Aggregate Lab Weekly Report
+### IDS - Aggregate Lab Weekly Report
 
-The IDSR Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDSR - Report: Suspected, Confirmed, Death**_ dataset when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want different users to have the ability to edit confirmed case data when compared to suspected cases/death data.
+The IDS Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDS - Report: Suspected, Confirmed, Death**_ dataset when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want different users to have the ability to edit confirmed case data when compared to suspected cases/death data.
 
-Like the data sets `IDSR - Report: Suspected, Confirmed, Death` and `IDSR - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
+Like the data sets `IDS - Report: Suspected, Confirmed, Death` and `IDS - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
 
 ### Population Weekly
 
@@ -174,17 +172,17 @@ The following validation rules are triggered and send a notification based on th
 | Cholera RDT positive                                         | 1 case RDT positive                                          |No |
 | Suspected Plague                                             | 1 suspected case                                             |No |
 | Confirmed Rabies                                             | 1 confirmed case                                             |No |
-| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |Yes <br>  `IDSR - Measles Suspected Outbreak` |
+| Suspected Measles/Rubella                                    | 5 suspected cases in one district in 30 days                 |Yes <br>  `IDS - Measles Suspected Outbreak` |
 | Confirmed Anthrax                                            | 1 confirmed case                                             |No |
 | Confirmed Dengue Fever                                       | 1 confirmed case                                             |No |
 | Suspected Pertussis                                          | 1 suspected case                                             |No |
-| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |Yes <br> `IDSR - Measles Confirmed Outbreak`|
+| Confirmed Measles outbreak                                   | 3 confirmed cases in one district in 30 days                 |Yes <br> `IDS - Measles Confirmed Outbreak`|
 | Two or more Acute Watery Diarrhea (AWD) aged 2 years and older (linked by time and place) with severe dehydration or dying | 2 or more AWD aged 2 years + (linked by time and place) with severe dehydration or dying | No |
 | Suspected Neonatal Tetanus                                   | 1 suspected case                                            | No |
-| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 | Yes <br> `IDSR - Meningitis alert` |
+| Meningitis alert                                             | 3 suspected cases/100 000 inhabitants / week (Minimum of 2 cases in one week) for district /subdistrict population above 30000 | Yes <br> `IDS - Meningitis alert` |
 | Suspected Viral Hemorrhagic Fever                            | 1 suspected case                                             | No |
 | Acute Watery Diarrhea Death                                  | One death from severe acute watery diarrhoea in a person at least 5 years old | No|
-| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 | Yes <br> `IDSR - Meningitis outbreak` |
+| Meningitis outbreak                                          | 10 suspected cases/100 000 inhabitants / week for district /subdistrict population above 30000 <br> **OR** <br> 5 suspected cases in one week <br> **OR** <br> doubling of the number of cases in a three-week period (epidemic alert) for district/ subdistrict population under 30000 | Yes <br> `IDS - Meningitis outbreak` |
 | One death from severe AWD in a person of any age             | 1 death from severe AWD in a person of any age               | No |
 | Confirmed AFP (VDPV)                                         | 1 confirmed case                                             |No |
 | Suspected Diptheria                                          | 1 suspected case                                             |No |
