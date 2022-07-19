@@ -21042,25 +21042,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#f1eef6",
-                    "endValue": 0.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "UOju4HaZLjt",
-                    "name": "Less than 0",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": -1000.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#ce1256",
                     "endValue": 100000.0,
                     "externalAccess": false,
@@ -21093,6 +21074,25 @@
                         "users": {}
                     },
                     "startValue": 0.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#f1eef6",
+                    "endValue": 0.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "UOju4HaZLjt",
+                    "name": "Less than 0",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": -1000.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -21149,25 +21149,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#DF202B",
-                    "endValue": 1000000.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "CJxLoYQnCnF",
-                    "name": "1+",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": 1.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#0087FF",
                     "endValue": 1.0,
                     "externalAccess": false,
@@ -21181,6 +21162,25 @@
                         "users": {}
                     },
                     "startValue": 0.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#DF202B",
+                    "endValue": 1000000.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "CJxLoYQnCnF",
+                    "name": "1+",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": 1.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
