@@ -1,1 +1,1 @@
-# IDSR - Integrated Disease Surveillance and Response
+# IDS - Integrated Disease Surveillance
