@@ -5913,10 +5913,10 @@
                     "id": "oJR70uNhjpc"
                 },
                 {
-                    "id": "Gazfp4C0d0g"
+                    "id": "aH6fYtpH2sA"
                 },
                 {
-                    "id": "aH6fYtpH2sA"
+                    "id": "Gazfp4C0d0g"
                 },
                 {
                     "id": "eEZeT2DGN8J"
@@ -6006,9 +6006,6 @@
                     "id": "TdxvdtbHsGa"
                 },
                 {
-                    "id": "uD7QDfNEpI2"
-                },
-                {
                     "id": "VYk6cMXgCY9"
                 },
                 {
@@ -6091,251 +6088,6 @@
                     "locale": "fr",
                     "property": "NAME",
                     "value": "SIMR"
-                }
-            ],
-            "user": {
-                "id": "vUeLeQMSwhN",
-                "name": "package admin",
-                "username": "package_admin"
-            },
-            "userAccesses": [],
-            "userGroupAccesses": []
-        },
-        {
-            "attributeValues": [],
-            "code": "IDS_AGG_AGG",
-            "externalAccess": false,
-            "favorite": false,
-            "id": "HSVL7Rh9JMw",
-            "indicators": [
-                {
-                    "id": "YrI7hQQadTD"
-                },
-                {
-                    "id": "cQEzLU5zHVR"
-                },
-                {
-                    "id": "hHsJACKkI5f"
-                },
-                {
-                    "id": "w2iZCr1yuyW"
-                },
-                {
-                    "id": "XIMXNswD8Ah"
-                },
-                {
-                    "id": "O3FS25ICj7i"
-                },
-                {
-                    "id": "aukwaj2kyvN"
-                },
-                {
-                    "id": "Krl87NwzrzS"
-                },
-                {
-                    "id": "y1CNMa8WFB8"
-                },
-                {
-                    "id": "oZ3ZiT58hBr"
-                },
-                {
-                    "id": "P0G458GzYBz"
-                },
-                {
-                    "id": "Jg4ZtqaQHTy"
-                },
-                {
-                    "id": "olyDHtjqsVu"
-                },
-                {
-                    "id": "hKxdzxZ4WFX"
-                },
-                {
-                    "id": "Bc74DE5XBEp"
-                },
-                {
-                    "id": "hdZoVVTIqAB"
-                },
-                {
-                    "id": "eX8kVT3oRoc"
-                },
-                {
-                    "id": "oI7XZUpAcs6"
-                },
-                {
-                    "id": "VT7WZlgGtx0"
-                },
-                {
-                    "id": "CmQc4v3pzdU"
-                },
-                {
-                    "id": "Gazfp4C0d0g"
-                },
-                {
-                    "id": "RK8hP0YA6DY"
-                },
-                {
-                    "id": "hQlQCMJVGm5"
-                },
-                {
-                    "id": "HpCrcujsxpP"
-                },
-                {
-                    "id": "ffNQctZ9uxd"
-                },
-                {
-                    "id": "ndbZtM8GymS"
-                },
-                {
-                    "id": "DZeudzA82MM"
-                },
-                {
-                    "id": "eF3kvrEC92b"
-                },
-                {
-                    "id": "vttjnYc5gmZ"
-                },
-                {
-                    "id": "QYI4OsZ0MXt"
-                },
-                {
-                    "id": "PJIL3Utok2F"
-                },
-                {
-                    "id": "U4Ya6XzPc1t"
-                },
-                {
-                    "id": "jTtMVb8GAIH"
-                },
-                {
-                    "id": "RKRtOnjvzsZ"
-                },
-                {
-                    "id": "Nb9CVapWdVE"
-                },
-                {
-                    "id": "j33w6nNEKnL"
-                },
-                {
-                    "id": "WpC4r43PwBr"
-                },
-                {
-                    "id": "uYw7H8L6Zme"
-                },
-                {
-                    "id": "z5jMXJUjwE3"
-                },
-                {
-                    "id": "QRzHPqj6T8j"
-                },
-                {
-                    "id": "nn2oCQFZTTc"
-                },
-                {
-                    "id": "xtky4S0uHGJ"
-                },
-                {
-                    "id": "T7JZ2VvrHI7"
-                },
-                {
-                    "id": "WND2T40z1d1"
-                },
-                {
-                    "id": "TdxvdtbHsGa"
-                },
-                {
-                    "id": "VYk6cMXgCY9"
-                },
-                {
-                    "id": "ziFf0topvdC"
-                },
-                {
-                    "id": "D4ChC06lIXi"
-                },
-                {
-                    "id": "TbLWFPUyRK1"
-                },
-                {
-                    "id": "V6hrsxzaRWa"
-                },
-                {
-                    "id": "bsDMS2hPESS"
-                },
-                {
-                    "id": "VN7pFfeVXba"
-                },
-                {
-                    "id": "fxF64ipVSq8"
-                },
-                {
-                    "id": "JtnZyeExDnc"
-                },
-                {
-                    "id": "ZZ22mApkgIo"
-                },
-                {
-                    "id": "hZADOqoTfCd"
-                },
-                {
-                    "id": "fajwNPsupHJ"
-                },
-                {
-                    "id": "m9GkAe97w2p"
-                },
-                {
-                    "id": "eAyOBfJrs3r"
-                },
-                {
-                    "id": "vav3peUGYbC"
-                },
-                {
-                    "id": "SDaGmAx4Tna"
-                },
-                {
-                    "id": "aoEX0fnD5lV"
-                },
-                {
-                    "id": "GRC7Xyb28sn"
-                },
-                {
-                    "id": "hjLcTJkb2v0"
-                },
-                {
-                    "id": "T2H2TbUBrDY"
-                },
-                {
-                    "id": "ZQ7MjGLGBRi"
-                },
-                {
-                    "id": "kR3X4SZFhLR"
-                },
-                {
-                    "id": "SDTCkYf3yty"
-                },
-                {
-                    "id": "K5SVUv3lStz"
-                },
-                {
-                    "id": "q25AwL80kYJ"
-                },
-                {
-                    "id": "rbnCYeVsf99"
-                }
-            ],
-            "name": "IDS Aggregate",
-            "publicAccess": "r-------",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {},
-                "users": {}
-            },
-            "translations": [
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "SIMR - Agrégé "
                 }
             ],
             "user": {
@@ -6747,9 +6499,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -6939,9 +6688,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -7061,9 +6807,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -7198,9 +6941,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -7384,9 +7124,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -7576,9 +7313,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -7698,9 +7432,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -8778,9 +8509,6 @@
                 },
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -9279,9 +9007,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -9401,9 +9126,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -9581,9 +9303,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -9703,9 +9422,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -9910,9 +9626,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10032,9 +9745,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10169,9 +9879,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10306,9 +10013,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10443,9 +10147,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10580,9 +10281,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10712,9 +10410,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10849,9 +10544,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -10986,9 +10678,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11118,9 +10807,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11255,9 +10941,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11392,9 +11075,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11514,9 +11194,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11636,9 +11313,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -11956,9 +11630,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -12227,9 +11898,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -12434,9 +12102,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -12556,9 +12221,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -13433,9 +13095,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -13555,9 +13214,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -13887,9 +13543,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14009,9 +13662,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14141,9 +13791,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14412,9 +14059,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14534,9 +14178,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14656,9 +14297,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14778,9 +14416,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -14900,9 +14535,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15022,9 +14654,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15149,9 +14778,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15335,9 +14961,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15596,9 +15219,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15733,9 +15353,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -15940,9 +15557,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -16062,9 +15676,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -16248,9 +15859,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -16370,9 +15978,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -16626,9 +16231,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -16748,9 +16350,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -17423,9 +17022,6 @@
                 },
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -17535,76 +17131,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "IDS_DRANCUCUNLIASIS_ATTACK_RATE",
-            "dataSets": [],
-            "denominator": -1,
-            "denominatorDescription": "Population exposed to Drancucunliasis",
-            "description": "Attack rate:An expression of incidence, defined as the proportion of persons at risk for an infection who become infected over a period of exposure.",
-            "dimensionItem": "uD7QDfNEpI2",
-            "dimensionItemType": "INDICATOR",
-            "externalAccess": false,
-            "favorite": false,
-            "id": "uD7QDfNEpI2",
-            "indicatorGroups": [
-                {
-                    "id": "FW8wnqkjmr6"
-                }
-            ],
-            "indicatorType": {
-                "id": "BY11PjGMCg2"
-            },
-            "legendSets": [],
-            "name": "[CONFIG] IDS - Drancucunliasis - Attack rate(/100000)",
-            "numerator": -1,
-            "numeratorDescription": "Number of new Drancucunliasis cases",
-            "periodOffset": 0,
-            "publicAccess": "r-------",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {},
-                "users": {}
-            },
-            "shortName": "Drancucunliasis - Attack rate(/100000)",
-            "translations": [
-                {
-                    "locale": "fr",
-                    "property": "DENOMINATOR_DESCRIPTION",
-                    "value": "Population exposée à la Dracunculose"
-                },
-                {
-                    "locale": "fr",
-                    "property": "SHORT_NAME",
-                    "value": "Dracunculose - Taux d'attaque(/100000)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "DESCRIPTION",
-                    "value": "Taux d'attaque: Expression de l'incidence, définie comme la proportion de personnes à risque pour une infection qui deviennent infectées au cours d'une période d'exposition"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NUMERATOR_DESCRIPTION",
-                    "value": "Nombre de nouveaux cas de Dracunculose"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "SIMR - Drancunculose - Taux d'attaque(/100000)"
-                }
-            ],
-            "user": {
-                "id": "vUeLeQMSwhN",
-                "name": "package admin",
-                "username": "package_admin"
-            },
-            "userAccesses": [],
-            "userGroupAccesses": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "IDS_MEASLES_CONF_CASES",
             "dataSets": [],
             "denominator": -1,
@@ -17617,9 +17143,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -17739,9 +17262,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -17931,9 +17451,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18068,9 +17585,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18205,9 +17719,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18342,9 +17853,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18464,9 +17972,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18601,9 +18106,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18738,9 +18240,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -18930,9 +18429,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -19052,9 +18548,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -19189,9 +18682,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -19326,9 +18816,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -19463,9 +18950,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20033,9 +19517,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20155,9 +19636,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20341,9 +19819,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20473,9 +19948,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20595,9 +20067,6 @@
             "indicatorGroups": [
                 {
                     "id": "FW8wnqkjmr6"
-                },
-                {
-                    "id": "HSVL7Rh9JMw"
                 }
             ],
             "indicatorType": {
@@ -20772,25 +20241,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#f1eef6",
-                    "endValue": 0.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "UOju4HaZLjt",
-                    "name": "Less than 0",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": -1000.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#ce1256",
                     "endValue": 100000.0,
                     "externalAccess": false,
@@ -20823,6 +20273,25 @@
                         "users": {}
                     },
                     "startValue": 0.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#f1eef6",
+                    "endValue": 0.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "UOju4HaZLjt",
+                    "name": "Less than 0",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": -1000.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -20879,25 +20348,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#DF202B",
-                    "endValue": 1000000.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "CJxLoYQnCnF",
-                    "name": "1+",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": 1.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#0087FF",
                     "endValue": 1.0,
                     "externalAccess": false,
@@ -20911,6 +20361,25 @@
                         "users": {}
                     },
                     "startValue": 0.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#DF202B",
+                    "endValue": 1000000.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "CJxLoYQnCnF",
+                    "name": "1+",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": 1.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -35688,7 +35157,7 @@
         "DHIS2Version": "2.37.7.1",
         "code": "IDS_AGG",
         "description": "Integrated Disease Surveillance (dashboard)",
-        "lastUpdated": "20220719T144459",
+        "lastUpdated": "20220720T065621",
         "locale": "en",
         "name": "IDS_AGG_DSH_DHIS2.37.7.1-en",
         "type": "DSH",
@@ -35785,6 +35254,33 @@
                     "value": "Alertes SIMR"
                 }
             ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "name": "Admin WHO",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        },
+        {
+            "attributeValues": [],
+            "code": "IDS_AGG_CAPTURE",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "tFbRg3v7QLB",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "IDS data capture",
+            "publicAccess": "rw------",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "rw------",
+                "userGroups": {},
+                "users": {}
+            },
+            "translations": [],
             "user": {
                 "id": "vUeLeQMSwhN",
                 "name": "Admin WHO",
