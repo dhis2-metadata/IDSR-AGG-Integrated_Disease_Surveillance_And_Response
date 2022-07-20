@@ -8,7 +8,7 @@ This document describes the system design for the aggregate disease surveillance
 2. Data Sets
 3. Data Exchange Mechanisms
 4. Dashboards
-5. Validation Rules 
+5. Validation Rules
 6. Validation Notifications
 7. Predictors
 
@@ -18,7 +18,7 @@ The aggregate surveillance package meta-data is provided in several different co
 
 The diseases covered in this package are as follows:
 
-||||| 
+|||||
 | ----------------------- | ----------------------- | ------------ | ------------ |
 | Acute Flaccid Paralysis | Acute Watery Diarrhoea  | Cholera      | Dengue Fever |
 | Diarrhoea with Blood (Shigella)    | Diptheria               | Measles      | Meningitis   |
@@ -40,7 +40,7 @@ The surveillance configuration package for aggregate reporting contains 4 datase
 
 ### IDS - Report: Suspected, Confirmed, Death
 
-The _**IDS - Report: Suspected, Confirmed, Death**_ dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have _**disaggregated**_ suspected cases and deaths and the form and uses a _**custom form design**_. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
+The **IDS - Report: Suspected, Confirmed, Death** dataset contains information on suspected cases, confirmed cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). A number of the diseases have **disaggregated** suspected cases and deaths and the form and uses a **custom form design**. The custom form design is a result of combining disaggregated and non-disaggregated data elements that belong to the same disease and are required to be grouped together.
 
 ![image-20200719115335917](resources/images/Screen01.png)
 
@@ -51,31 +51,32 @@ Disaggregations have been applied using the category model within DHIS2. This mo
 
 ![image-20200719115354457](resources/images/Screen14.png)
 
-If you need to modify this dataset so it is not disaggregated by age, you can do so directly before or after installation. It would be the recommended approach to do this before installation by following steps within the installation guide on modifying the package. 
+If you need to modify this dataset so it is not disaggregated by age, you can do so directly before or after installation. It would be the recommended approach to do this before installation by following steps within the installation guide on modifying the package.
 
-This dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information (ie. enter data and modify existing data values). This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases. 
+This dataset assumes a mature configuration in which suspected cases, confirmed cases and deaths are all being collected. It also assumes that everyone interacting with this dataset should have access to edit this information (ie. enter data and modify existing data values). This may not be the case in all implementantions, if, for example, you would like to segment off who can edit data on suspected and confirmed cases.
 
-In summary, if it is the case where you are ***not yet collecting data*** on confirmed cases or ***you want seperate groups to have the ability to edit*** suspected and confirmed case data, then this may not be the dataset to implement in your context. If ***you are collecting data*** on confirmed cases, and you want ***equal access for all users to edit*** the suspected and confirmed case data, then this type of dataset design would be suitable to implement in your own context. 
+In summary, if it is the case where you are ***not yet collecting data*** on confirmed cases or ***you want seperate groups to have the ability to edit*** suspected and confirmed case data, then this may not be the dataset to implement in your context. If ***you are collecting data*** on confirmed cases, and you want ***equal access for all users to edit*** the suspected and confirmed case data, then this type of dataset design would be suitable to implement in your own context.
 
 ### IDS - Report: Suspected, Death
 
-The _**IDS - Report: Suspected, Death**_ dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDS - Aggregate Lab Weekly Report dataset.
+The **IDS - Report: Suspected, Death** dataset contains information on suspected cases and deaths on the diseases outlined in the section [diseases covered](#diseases-covered). Note that it does not contain information on confirmed cases. This was done in the event that lab confirmation was a separate process, or that seperate access needs to be provided for those entering confirmed case data. This dataset therefore links to the IDSR - Aggregate Lab Weekly Report in the event that cases are confirmed using a separate process. This form uses the same data elements and structure contained in the IDSR - Aggregate Weekly Report dataset for cases and deaths. The custom form design from this dataset was therefore re-used such that a uniform design would be applied between this dataset and the IDS - Aggregate Lab Weekly Report dataset.
 
 ![image-20200719115644641](resources/images/Screenx42.png)
 
 This dataset is meant for settings where either
+
 1. Data on confirmed cases is not yet being collected through DHIS2
 2. Data on confirmed cases is being collected, but is either a seperate process or access to edit this data needs to be seperated
 
 ### IDS - Aggregate Lab Weekly Report
 
-The IDS Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it _**does not contain information on suspected cases and deaths**_. This report is meant to complement the _**IDS - Report: Suspected, Confirmed, Death**_ dataset when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want different users to have the ability to edit confirmed case data when compared to suspected cases/death data.
+The IDS Aggregate Lab Weekly report contains information on confirmed cases for the diseases outlined in [Table 1](#table-1). Note that it **does not contain information on suspected cases and deaths**. This report is meant to complement the **IDS - Report: Suspected, Confirmed, Death** dataset when the lab confirmed cases reporting process is separate from the reporting of suspected cases and deaths. This includes scenarios in which you want different users to have the ability to edit confirmed case data when compared to suspected cases/death data.
 
-Like the data sets `IDS - Report: Suspected, Confirmed, Death` and `IDS - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance. 
+Like the data sets `IDS - Report: Suspected, Confirmed, Death` and `IDS - Report: Suspected, Death` this dataset uses a custom form design to remain consistent in its appearance.
 
 ### Population Weekly
 
-The Population weekly dataset is used to collect weekly population data. The main function of this is for thresholds for ***meningitis***. It is a weekly data set as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region. 
+The Population weekly dataset is used to collect weekly population data. The main function of this is for thresholds for ***meningitis***. It is a weekly data set as the DHIS2 predictor function is used to generate thresholds and currently can not combine data of different periodicity (in this case, weekly surveillance data with annual population data). The data element that it contains, population weekly, uses the aggregation type of "last value" and is meant to be equal to the estimated population total for a year within a given geographical region.
 
 As an example application of this, if your yearly population within District A is 1000, then the weekly population within District A would also be 1000. By using the "last value" aggregation type, these weekly values will not sum and will consistently be equal to 1000 throughout the year within this district.
 
@@ -103,9 +104,11 @@ Once this configuration is saved you can call on it as needed, select the period
 
 ![confirm_transfer](resources/images/Screen11.png)
 
-***NB: Note that this process can also be scheduled if you want to send the data automatically***
+> **NOTE**
+>
+>This process can also be scheduled if you want to send the data automatically
 
-For more information on the data transfer app, please refer to the app's manual. 
+For more information on the data transfer app, please refer to the app's manual.
 
 ### Excel to DHIS2 data exchange
 
@@ -127,26 +130,19 @@ Dashboards for each of the diseases listed within the [diseases covered](#diseas
 2. Map showing suspected outbreak areas in the last week
 3. Pivot table showing suspected outbreak areas in the last 12 weeks
 4. Map showing confirmed outbreak areas in the last week
-
-![dashboard_1](resources/images/dashboard_1.png)
-
+   ![dashboard_1](resources/images/dashboard_1.png)
 5. Pivot table showing the total weeks an area has been in suspected outbreak in the last year
 6. Map showing suspected outbreak areas in the last year
 7. Pivot table showing the total weeks an areas has been in confirmed outbreak in the last year
 8. Map showing confirmed outbreak areas in the last year
-
-![dashboard_2](resources/images/dashboard_2.png)
-
+   ![dashboard_2](resources/images/dashboard_2.png)
 9. Map showing the incidence rate in the last week
 10. Map showing the distribution of cases in the last week
 11. Chart showing the number of suspected cases and deaths in the last 12 weeks
 12. Pivot table showing the number of suspected cases and deaths in the last 12 weeks
-
-![dashboard_3](resources/images/dashboard_3.png)
-
+   ![dashboard_3](resources/images/dashboard_3.png)
 13. Chart showing a comparison of cases by weeks of this year and last year
-
-![dashboard_4](resources/images/dashboard_4.png)
+   ![dashboard_4](resources/images/dashboard_4.png)
 
 ## Validation Rules
 
@@ -160,12 +156,12 @@ Validation rules that perform consistency checks are comparing weekly confirmed 
 
 ### Validation Rules - Thresholds
 
-Validation rules are also used to determine if a threshold has been surpassed. These validation rules are sometimes using the output of a predictor to make a comparison depending on the criteria that needs to be met. When these rules are violated, a notification is sent out. 
+Validation rules are also used to determine if a threshold has been surpassed. These validation rules are sometimes using the output of a predictor to make a comparison depending on the criteria that needs to be met. When these rules are violated, a notification is sent out.
 
 The following validation rules are triggered and send a notification based on the criteria specified below:
 
 | Name                                                         | Description/Notification Trigger                             |Predictor Used|
-| ------------------------------------------------------------ | ------------------------------------------------------------ |-----------| 
+| ------------------------------------------------------------ | ------------------------------------------------------------ |-----------|
 | Suspected Non Neonatal Tetanus                               | 1 suspected case                                             |No |
 | Probable Yellow Fever                                        | 1 case with IgM positive                                     |No |
 | Confirmed Rubella                                            | 1 confirmed case                                             |No |
@@ -189,7 +185,7 @@ The following validation rules are triggered and send a notification based on th
 | Confirmed AFP (WPV)                                          | 1 confirmed case                                             |No |
 | Suspected Diarrhea with Blood (Shigella)                     | 1 suspected case                                             |No |
 
-Note the differentiation between `suspected cases` and `confirmed cases.` In the context of this surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
+Note the differentiation between `suspected cases` and `confirmed cases`. In the context of this surveillance package, suspected cases identify if an area is in alert while confirmed case identify if an area is in outbreak.
 
 These rules can be set to run automatically or can also be run manually. Configuration of the automated process is discussed within the installation guide.
 
@@ -201,7 +197,7 @@ In response to a threshold being surpassed, notifications can be sent out using 
 - SMS
 - E-mail
 
-For more information on setting these services up, refer to the documentation on [email](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) and [SMS](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html). 
+For more information on setting these services up, refer to the documentation on [email](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/configuring-the-system/system-settings.html#system_email_settings) and [SMS](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/configure-sms.html).
 
 An example e-mail that is sent when a measles outbreak is detected can be seen below.
 
@@ -225,7 +221,7 @@ Predictors are defined to store values within companion data elements that can t
 
 Let us take an example in which 1 suspected case is the threshold to identify if an area is in alert. Note that this same nomenclature would apply to an example in which 1 confirmed case is the threshold to identify if an area is in outbreak.
 
-We can use the example for `diptheria`; if we review the [validation rules thresholds](#validation-rules---thresholds) section we will see one suspected case of diptheria is our threshold. 
+We can use the example for `diptheria`; if we review the [validation rules thresholds](#validation-rules---thresholds) section we will see one suspected case of diptheria is our threshold.
 
 Within the predictor, we have the following fields:
 
@@ -237,9 +233,9 @@ Within the predictor, we have the following fields:
 
 ![predictor_formula_1](resources/images/predictor_formula_1.png)
 
-After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
+After this is defined we have what is referred to as the `generator`. The generator is essentially the formula used to define the predictor. In this case, using diptheria as our example, we have a logical test stating the following
 
->If the number of suspected diptheria cases is >= 1 within a given org unit, return a value of 1. If this is not the case return a value of 0.
+If the number of suspected diptheria cases is >= 1 within a given org unit, return a value of 1. If this is not the case return a value of 0.
 
 These types of logical if statements are used in all of the predictors within this package. If you are not familiar with boolean logic, a broad overview can be found [here](https://www.lotame.com/what-is-boolean-logic/#:~:text=Boolean%20Logic%20is%20a%20form,are%20either%20true%20or%20false.).
 
@@ -251,9 +247,9 @@ The last components of the predictor identify which period we will be getting da
 
 #### Example 2: A disease where a specific threshold formula is used (ie. measles)
 
-In example 2, we can review the threshold for a ***confirmed measles outbreak***. This threshold is defined as `3 confirmed cases in one district in 30 days.` There are some key components that must be considered
+In example 2, we can review the threshold for a ***confirmed measles outbreak***. This threshold is defined as `3 confirmed cases in one district in 30 days`. There are some key components that must be considered
 
-1. A total of 3 cases within the district 
+1. A total of 3 cases within the district
 2. These cases can occur over a period of 30 days
 
 We still have the same fields as in example 1 to start our predictor
@@ -266,7 +262,7 @@ We still have the same fields as in example 1 to start our predictor
 
 ![predictor_formula_11](resources/images/predictor_formula_11.png)
 
-After this is defined we have what is referred to as the `generator.` The generator is essentially the formula used to define the predictor. In this case, using measles as our example, we have a logical test stating the following
+After this is defined we have what is referred to as the `generator`. The generator is essentially the formula used to define the predictor. In this case, using measles as our example, we have a logical test stating the following
 
 >If the sum of confirmed measles cases is greater then 3, return a value of 1. If this is not the case return a value of 0.
 
@@ -278,9 +274,10 @@ The last components of the predictor identifies which period we will be getting 
 
 ![predictor_formula_13](resources/images/predictor_formula_13.png)
 
-### Predictor Summary 
+### Predictor Summary
 
 **NB**: We use predictors to help us test our thresholds and store data values to identify areas in alert or outbreak. Areas in alert are based off thresholds using suspected cases, while areas in outbreak refer to thresholds using confirmed cases. To define these thresholds using a predictor we must consider
+
 1. The data element you will output the predictor value to
 2. The period in which the predictor will check data against
 3. The organisation unit level you will output the predictor value to

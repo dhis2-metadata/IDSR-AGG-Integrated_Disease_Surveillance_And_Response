@@ -8,9 +8,10 @@ Available translations: French
 
 ## Overview
 
-The metadata reference and metadata json files provide technical details on package version and content. 
+The metadata reference and metadata json files provide technical details on package version and content.
 
 The metadata package consists of the following modules:
+
 - Integrated Disease Surveillance
 - Integrated Disease Surveillance (dashboard)
 
@@ -221,7 +222,7 @@ The organisation unit groups for all validation rules are set to the district le
 
 All validation notifications included in the package are listed in the metadata reference file.
 
-Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY` within the metadata file if you would like to change this strategy before importing the package. 
+Note that all validation rule notifications for this package are all set to be sent as a "single notification." This means that one notification is sent out for each organisation unit/period combination when a notification is triggered. This can also be configured as a "collective summary." The strategy for sending these notifications is located in the `"sendStrategy"` property of each validation notification. It is set to `SINGLE_NOTICIATION` by default. Adjust these values to `COLLECTIVE_SUMMARY` within the metadata file if you would like to change this strategy before importing the package.
 
 ***NB: Note that you can also change this in maintenance for each validation rule notification at any time after they are imported as you may want to demonstrate or test both strategies to select one that is appropriate for your own setting***.
 
@@ -307,7 +308,7 @@ A couple tips for each job type:
 
 Predictor jobs consist of a relative start and end date. This means you can run your predictors for the most recent period to generate the latest data that you need. This should be useful if your previous data is not being changed, as the other predicted values will already be generated and stored (and thus this process will not necessarily need to occur once more for those already generated values that are still valid). This is a particularly resource heavy operation, and if your previous data is not routinely changing, generating data for the most recent period that you need data for is the recommended approach.  
 
-You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDS`. If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html). 
+You are also able to select specific predictors or predictor groups to run during the job. The predictor group for this package is simply called `IDS`. If you select multiple groups it will run the predictors in the order the groups are selected. You can read more about this within the [DHIS2 documentation](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-master/maintaining-the-system/scheduling.html).
 
 This needs to be the first job that starts in your sequence, and should finish before the next job (analytics) starts.
 
@@ -325,7 +326,7 @@ You can specify validation rule groups for the monitoring job. Create one monito
 
 If you want to send out the validation notifications, ensure that the "Send notifications" item is selected.
 
-![send_notification](resources/images/installation_guide/send_notification_scheduler.png)
+![send_notification](resources/images/send_notification_scheduler.png)
 
 ### Sending out notifications
 
@@ -354,10 +355,8 @@ Once the program has been imported, you might want to make certain modifications
 - Modifying indicators based on local case definitions
 - Adding dashboards/dashboard items
 
-However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example predictors or notifications. 
+However, it is strongly recommended to take great caution if you decide to change or remove any of the included form/metadata. There is a danger that modifications could break functionality, for example predictors or notifications.
 
 ## Removing metadata
 
 In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependencies.
-
-
