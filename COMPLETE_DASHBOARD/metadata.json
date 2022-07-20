@@ -5973,13 +5973,13 @@
                     "id": "ktqMNXwts5h"
                 },
                 {
-                    "id": "HjOxL3tDqEf"
-                },
-                {
                     "id": "olyDHtjqsVu"
                 },
                 {
                     "id": "hKxdzxZ4WFX"
+                },
+                {
+                    "id": "HjOxL3tDqEf"
                 },
                 {
                     "id": "hdZoVVTIqAB"
@@ -6042,22 +6042,22 @@
                     "id": "A52AlgcaCEN"
                 },
                 {
-                    "id": "nn2oCQFZTTc"
-                },
-                {
                     "id": "xtky4S0uHGJ"
                 },
                 {
-                    "id": "FS6Ml4vHa4P"
+                    "id": "nn2oCQFZTTc"
                 },
                 {
                     "id": "ziFf0topvdC"
                 },
                 {
-                    "id": "TFyvFrMIGYz"
+                    "id": "FS6Ml4vHa4P"
                 },
                 {
                     "id": "bsDMS2hPESS"
+                },
+                {
+                    "id": "TFyvFrMIGYz"
                 },
                 {
                     "id": "foIT9ImHcrf"
@@ -6090,10 +6090,10 @@
                     "id": "vav3peUGYbC"
                 },
                 {
-                    "id": "lMRuY8KHVKP"
+                    "id": "GRC7Xyb28sn"
                 },
                 {
-                    "id": "GRC7Xyb28sn"
+                    "id": "lMRuY8KHVKP"
                 },
                 {
                     "id": "mQUiCSlNSVh"
@@ -6171,13 +6171,13 @@
                     "id": "THePwVUy8OG"
                 },
                 {
+                    "id": "VT7WZlgGtx0"
+                },
+                {
                     "id": "x5GM3sHY4TJ"
                 },
                 {
                     "id": "TzYSEXFpeD5"
-                },
-                {
-                    "id": "VT7WZlgGtx0"
                 },
                 {
                     "id": "oJR70uNhjpc"
@@ -6189,19 +6189,19 @@
                     "id": "aH6fYtpH2sA"
                 },
                 {
-                    "id": "eEZeT2DGN8J"
-                },
-                {
                     "id": "hQlQCMJVGm5"
                 },
                 {
-                    "id": "nmZflUxmA7x"
+                    "id": "eEZeT2DGN8J"
+                },
+                {
+                    "id": "ffNQctZ9uxd"
                 },
                 {
                     "id": "HpCrcujsxpP"
                 },
                 {
-                    "id": "ffNQctZ9uxd"
+                    "id": "nmZflUxmA7x"
                 },
                 {
                     "id": "ndbZtM8GymS"
@@ -6222,10 +6222,10 @@
                     "id": "kZvqLqzBPGK"
                 },
                 {
-                    "id": "QYI4OsZ0MXt"
+                    "id": "PJIL3Utok2F"
                 },
                 {
-                    "id": "PJIL3Utok2F"
+                    "id": "QYI4OsZ0MXt"
                 },
                 {
                     "id": "aEQUwXmLNwz"
@@ -6237,10 +6237,10 @@
                     "id": "lp0Vd00vsJc"
                 },
                 {
-                    "id": "hxWZo7jVGv6"
+                    "id": "RKRtOnjvzsZ"
                 },
                 {
-                    "id": "RKRtOnjvzsZ"
+                    "id": "hxWZo7jVGv6"
                 },
                 {
                     "id": "Bhq0SYV7mDQ"
@@ -6249,10 +6249,10 @@
                     "id": "j33w6nNEKnL"
                 },
                 {
-                    "id": "Ndl0LCYzQyy"
+                    "id": "uYw7H8L6Zme"
                 },
                 {
-                    "id": "uYw7H8L6Zme"
+                    "id": "Ndl0LCYzQyy"
                 },
                 {
                     "id": "z5jMXJUjwE3"
@@ -6274,9 +6274,6 @@
                 },
                 {
                     "id": "TdxvdtbHsGa"
-                },
-                {
-                    "id": "uD7QDfNEpI2"
                 },
                 {
                     "id": "VYk6cMXgCY9"
@@ -6333,10 +6330,10 @@
                     "id": "SDTCkYf3yty"
                 },
                 {
-                    "id": "YAZFjSM05TX"
+                    "id": "K5SVUv3lStz"
                 },
                 {
-                    "id": "K5SVUv3lStz"
+                    "id": "YAZFjSM05TX"
                 },
                 {
                     "id": "rbnCYeVsf99"
@@ -6361,251 +6358,6 @@
                     "locale": "fr",
                     "property": "NAME",
                     "value": "SIMR"
-                }
-            ],
-            "user": {
-                "id": "vUeLeQMSwhN",
-                "name": "package admin",
-                "username": "package_admin"
-            },
-            "userAccesses": [],
-            "userGroupAccesses": []
-        },
-        {
-            "attributeValues": [],
-            "code": "IDS_AGG_AGG",
-            "externalAccess": false,
-            "favorite": false,
-            "id": "HSVL7Rh9JMw",
-            "indicators": [
-                {
-                    "id": "YrI7hQQadTD"
-                },
-                {
-                    "id": "cQEzLU5zHVR"
-                },
-                {
-                    "id": "hHsJACKkI5f"
-                },
-                {
-                    "id": "w2iZCr1yuyW"
-                },
-                {
-                    "id": "XIMXNswD8Ah"
-                },
-                {
-                    "id": "O3FS25ICj7i"
-                },
-                {
-                    "id": "aukwaj2kyvN"
-                },
-                {
-                    "id": "Krl87NwzrzS"
-                },
-                {
-                    "id": "y1CNMa8WFB8"
-                },
-                {
-                    "id": "oZ3ZiT58hBr"
-                },
-                {
-                    "id": "P0G458GzYBz"
-                },
-                {
-                    "id": "Jg4ZtqaQHTy"
-                },
-                {
-                    "id": "olyDHtjqsVu"
-                },
-                {
-                    "id": "hKxdzxZ4WFX"
-                },
-                {
-                    "id": "Bc74DE5XBEp"
-                },
-                {
-                    "id": "hdZoVVTIqAB"
-                },
-                {
-                    "id": "eX8kVT3oRoc"
-                },
-                {
-                    "id": "oI7XZUpAcs6"
-                },
-                {
-                    "id": "CmQc4v3pzdU"
-                },
-                {
-                    "id": "VT7WZlgGtx0"
-                },
-                {
-                    "id": "Gazfp4C0d0g"
-                },
-                {
-                    "id": "RK8hP0YA6DY"
-                },
-                {
-                    "id": "hQlQCMJVGm5"
-                },
-                {
-                    "id": "ffNQctZ9uxd"
-                },
-                {
-                    "id": "HpCrcujsxpP"
-                },
-                {
-                    "id": "ndbZtM8GymS"
-                },
-                {
-                    "id": "DZeudzA82MM"
-                },
-                {
-                    "id": "eF3kvrEC92b"
-                },
-                {
-                    "id": "vttjnYc5gmZ"
-                },
-                {
-                    "id": "PJIL3Utok2F"
-                },
-                {
-                    "id": "QYI4OsZ0MXt"
-                },
-                {
-                    "id": "U4Ya6XzPc1t"
-                },
-                {
-                    "id": "jTtMVb8GAIH"
-                },
-                {
-                    "id": "RKRtOnjvzsZ"
-                },
-                {
-                    "id": "Nb9CVapWdVE"
-                },
-                {
-                    "id": "j33w6nNEKnL"
-                },
-                {
-                    "id": "WpC4r43PwBr"
-                },
-                {
-                    "id": "uYw7H8L6Zme"
-                },
-                {
-                    "id": "z5jMXJUjwE3"
-                },
-                {
-                    "id": "QRzHPqj6T8j"
-                },
-                {
-                    "id": "xtky4S0uHGJ"
-                },
-                {
-                    "id": "nn2oCQFZTTc"
-                },
-                {
-                    "id": "T7JZ2VvrHI7"
-                },
-                {
-                    "id": "WND2T40z1d1"
-                },
-                {
-                    "id": "TdxvdtbHsGa"
-                },
-                {
-                    "id": "VYk6cMXgCY9"
-                },
-                {
-                    "id": "ziFf0topvdC"
-                },
-                {
-                    "id": "D4ChC06lIXi"
-                },
-                {
-                    "id": "TbLWFPUyRK1"
-                },
-                {
-                    "id": "V6hrsxzaRWa"
-                },
-                {
-                    "id": "bsDMS2hPESS"
-                },
-                {
-                    "id": "VN7pFfeVXba"
-                },
-                {
-                    "id": "fxF64ipVSq8"
-                },
-                {
-                    "id": "JtnZyeExDnc"
-                },
-                {
-                    "id": "ZZ22mApkgIo"
-                },
-                {
-                    "id": "hZADOqoTfCd"
-                },
-                {
-                    "id": "fajwNPsupHJ"
-                },
-                {
-                    "id": "m9GkAe97w2p"
-                },
-                {
-                    "id": "eAyOBfJrs3r"
-                },
-                {
-                    "id": "SDaGmAx4Tna"
-                },
-                {
-                    "id": "vav3peUGYbC"
-                },
-                {
-                    "id": "aoEX0fnD5lV"
-                },
-                {
-                    "id": "hjLcTJkb2v0"
-                },
-                {
-                    "id": "GRC7Xyb28sn"
-                },
-                {
-                    "id": "T2H2TbUBrDY"
-                },
-                {
-                    "id": "ZQ7MjGLGBRi"
-                },
-                {
-                    "id": "kR3X4SZFhLR"
-                },
-                {
-                    "id": "SDTCkYf3yty"
-                },
-                {
-                    "id": "q25AwL80kYJ"
-                },
-                {
-                    "id": "K5SVUv3lStz"
-                },
-                {
-                    "id": "rbnCYeVsf99"
-                }
-            ],
-            "name": "IDS Aggregate",
-            "publicAccess": "r-------",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {},
-                "users": {}
-            },
-            "translations": [
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "SIMR - Agrégé "
                 }
             ],
             "user": {
@@ -7016,9 +6768,6 @@
             "id": "hdZoVVTIqAB",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -7208,9 +6957,6 @@
             "id": "w2iZCr1yuyW",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -7329,9 +7075,6 @@
             "favorite": false,
             "id": "eX8kVT3oRoc",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -7466,9 +7209,6 @@
             "favorite": false,
             "id": "olyDHtjqsVu",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -7652,9 +7392,6 @@
             "favorite": false,
             "id": "hKxdzxZ4WFX",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -7845,9 +7582,6 @@
             "id": "vttjnYc5gmZ",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -7966,9 +7700,6 @@
             "favorite": false,
             "id": "cQEzLU5zHVR",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -9044,9 +8775,6 @@
             "id": "oI7XZUpAcs6",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "rnPpen0eECz"
                 },
                 {
@@ -9548,9 +9276,6 @@
             "id": "m9GkAe97w2p",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -9669,9 +9394,6 @@
             "favorite": false,
             "id": "O3FS25ICj7i",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -9850,9 +9572,6 @@
             "id": "y1CNMa8WFB8",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -9971,9 +9690,6 @@
             "favorite": false,
             "id": "vav3peUGYbC",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -10179,9 +9895,6 @@
             "id": "GRC7Xyb28sn",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -10300,9 +10013,6 @@
             "favorite": false,
             "id": "bsDMS2hPESS",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -10438,9 +10148,6 @@
             "id": "Nb9CVapWdVE",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -10574,9 +10281,6 @@
             "favorite": false,
             "id": "CmQc4v3pzdU",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -10712,9 +10416,6 @@
             "id": "T2H2TbUBrDY",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -10849,9 +10550,6 @@
             "id": "YrI7hQQadTD",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -10980,9 +10678,6 @@
             "favorite": false,
             "id": "nn2oCQFZTTc",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -11118,9 +10813,6 @@
             "id": "aukwaj2kyvN",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -11255,9 +10947,6 @@
             "id": "oZ3ZiT58hBr",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -11386,9 +11075,6 @@
             "favorite": false,
             "id": "Jg4ZtqaQHTy",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -11524,9 +11210,6 @@
             "id": "WpC4r43PwBr",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -11661,9 +11344,6 @@
             "id": "Krl87NwzrzS",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -11783,9 +11463,6 @@
             "id": "RK8hP0YA6DY",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -11904,9 +11581,6 @@
             "favorite": false,
             "id": "kR3X4SZFhLR",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -12225,9 +11899,6 @@
             "id": "xtky4S0uHGJ",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -12496,9 +12167,6 @@
             "id": "hHsJACKkI5f",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -12703,9 +12371,6 @@
             "id": "fajwNPsupHJ",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -12824,9 +12489,6 @@
             "favorite": false,
             "id": "jTtMVb8GAIH",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -13702,9 +13364,6 @@
             "id": "ZQ7MjGLGBRi",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -13823,9 +13482,6 @@
             "favorite": false,
             "id": "XIMXNswD8Ah",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -14156,9 +13812,6 @@
             "id": "P0G458GzYBz",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -14277,9 +13930,6 @@
             "favorite": false,
             "id": "q25AwL80kYJ",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -14409,9 +14059,6 @@
             "favorite": false,
             "id": "Bc74DE5XBEp",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -14681,9 +14328,6 @@
             "id": "ziFf0topvdC",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -14802,9 +14446,6 @@
             "favorite": false,
             "id": "VN7pFfeVXba",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -14925,9 +14566,6 @@
             "id": "JtnZyeExDnc",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -15046,9 +14684,6 @@
             "favorite": false,
             "id": "hZADOqoTfCd",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -15169,9 +14804,6 @@
             "id": "rbnCYeVsf99",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -15290,9 +14922,6 @@
             "favorite": false,
             "id": "RKRtOnjvzsZ",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -15417,9 +15046,6 @@
             "favorite": false,
             "id": "z5jMXJUjwE3",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -15603,9 +15229,6 @@
             "favorite": false,
             "id": "hQlQCMJVGm5",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -15865,9 +15488,6 @@
             "id": "SDTCkYf3yty",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -16001,9 +15621,6 @@
             "favorite": false,
             "id": "hjLcTJkb2v0",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -16209,9 +15826,6 @@
             "id": "V6hrsxzaRWa",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -16330,9 +15944,6 @@
             "favorite": false,
             "id": "eF3kvrEC92b",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -16517,9 +16128,6 @@
             "id": "Gazfp4C0d0g",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -16638,9 +16246,6 @@
             "favorite": false,
             "id": "DZeudzA82MM",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -16895,9 +16500,6 @@
             "id": "QRzHPqj6T8j",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -17016,9 +16618,6 @@
             "favorite": false,
             "id": "j33w6nNEKnL",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -17689,9 +17288,6 @@
             "id": "aoEX0fnD5lV",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "rnPpen0eECz"
                 },
                 {
@@ -17805,76 +17401,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "IDS_DRANCUCUNLIASIS_ATTACK_RATE",
-            "dataSets": [],
-            "denominator": -1,
-            "denominatorDescription": "Population exposed to Drancucunliasis",
-            "description": "Attack rate:An expression of incidence, defined as the proportion of persons at risk for an infection who become infected over a period of exposure.",
-            "dimensionItem": "uD7QDfNEpI2",
-            "dimensionItemType": "INDICATOR",
-            "externalAccess": false,
-            "favorite": false,
-            "id": "uD7QDfNEpI2",
-            "indicatorGroups": [
-                {
-                    "id": "FW8wnqkjmr6"
-                }
-            ],
-            "indicatorType": {
-                "id": "BY11PjGMCg2"
-            },
-            "legendSets": [],
-            "name": "[CONFIG] IDS - Drancucunliasis - Attack rate(/100000)",
-            "numerator": -1,
-            "numeratorDescription": "Number of new Drancucunliasis cases",
-            "periodOffset": 0,
-            "publicAccess": "r-------",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {},
-                "users": {}
-            },
-            "shortName": "Drancucunliasis - Attack rate(/100000)",
-            "translations": [
-                {
-                    "locale": "fr",
-                    "property": "DENOMINATOR_DESCRIPTION",
-                    "value": "Population exposée à la Dracunculose"
-                },
-                {
-                    "locale": "fr",
-                    "property": "SHORT_NAME",
-                    "value": "Dracunculose - Taux d'attaque(/100000)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "DESCRIPTION",
-                    "value": "Taux d'attaque: Expression de l'incidence, définie comme la proportion de personnes à risque pour une infection qui deviennent infectées au cours d'une période d'exposition"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NUMERATOR_DESCRIPTION",
-                    "value": "Nombre de nouveaux cas de Dracunculose"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "SIMR - Drancunculose - Taux d'attaque(/100000)"
-                }
-            ],
-            "user": {
-                "id": "vUeLeQMSwhN",
-                "name": "package admin",
-                "username": "package_admin"
-            },
-            "userAccesses": [],
-            "userGroupAccesses": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "IDS_MEASLES_CONF_CASES",
             "dataSets": [],
             "denominator": -1,
@@ -17885,9 +17411,6 @@
             "favorite": false,
             "id": "VYk6cMXgCY9",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -18007,9 +17530,6 @@
             "favorite": false,
             "id": "ZZ22mApkgIo",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -18200,9 +17720,6 @@
             "id": "eAyOBfJrs3r",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -18336,9 +17853,6 @@
             "favorite": false,
             "id": "ndbZtM8GymS",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -18474,9 +17988,6 @@
             "id": "T7JZ2VvrHI7",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -18611,9 +18122,6 @@
             "id": "HpCrcujsxpP",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -18732,9 +18240,6 @@
             "favorite": false,
             "id": "TbLWFPUyRK1",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -18870,9 +18375,6 @@
             "id": "TdxvdtbHsGa",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -19006,9 +18508,6 @@
             "favorite": false,
             "id": "QYI4OsZ0MXt",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -19199,9 +18698,6 @@
             "id": "U4Ya6XzPc1t",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -19320,9 +18816,6 @@
             "favorite": false,
             "id": "SDaGmAx4Tna",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -19458,9 +18951,6 @@
             "id": "PJIL3Utok2F",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -19595,9 +19085,6 @@
             "id": "K5SVUv3lStz",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -19731,9 +19218,6 @@
             "favorite": false,
             "id": "uYw7H8L6Zme",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -20302,9 +19786,6 @@
             "id": "D4ChC06lIXi",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -20423,9 +19904,6 @@
             "favorite": false,
             "id": "fxF64ipVSq8",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -20610,9 +20088,6 @@
             "id": "ffNQctZ9uxd",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -20742,9 +20217,6 @@
             "id": "VT7WZlgGtx0",
             "indicatorGroups": [
                 {
-                    "id": "HSVL7Rh9JMw"
-                },
-                {
                     "id": "FW8wnqkjmr6"
                 }
             ],
@@ -20863,9 +20335,6 @@
             "favorite": false,
             "id": "WND2T40z1d1",
             "indicatorGroups": [
-                {
-                    "id": "HSVL7Rh9JMw"
-                },
                 {
                     "id": "FW8wnqkjmr6"
                 }
@@ -21042,6 +20511,25 @@
             "legends": [
                 {
                     "attributeValues": [],
+                    "color": "#f1eef6",
+                    "endValue": 0.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "UOju4HaZLjt",
+                    "name": "Less than 0",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": -1000.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
                     "color": "#ce1256",
                     "endValue": 100000.0,
                     "externalAccess": false,
@@ -21074,25 +20562,6 @@
                         "users": {}
                     },
                     "startValue": 0.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
-                    "color": "#f1eef6",
-                    "endValue": 0.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "UOju4HaZLjt",
-                    "name": "Less than 0",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": -1000.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -21149,25 +20618,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#0087FF",
-                    "endValue": 1.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "b2V4H4D3Bpm",
-                    "name": "0-1",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": 0.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#DF202B",
                     "endValue": 1000000.0,
                     "externalAccess": false,
@@ -21181,6 +20631,25 @@
                         "users": {}
                     },
                     "startValue": 1.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#0087FF",
+                    "endValue": 1.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "b2V4H4D3Bpm",
+                    "name": "0-1",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": 0.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -35820,7 +35289,7 @@
         "DHIS2Version": "2.36.11.1",
         "code": "IDS_AGG",
         "description": "Integrated Disease Surveillance (dashboard)",
-        "lastUpdated": "20220719T144459",
+        "lastUpdated": "20220720T085825",
         "locale": "en",
         "name": "IDS_AGG_DSH_DHIS2.36.11.1-en",
         "type": "DSH",
@@ -35917,6 +35386,33 @@
                     "value": "Alertes SIMR"
                 }
             ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "name": "Admin WHO",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        },
+        {
+            "attributeValues": [],
+            "code": "IDS_AGG_CAPTURE",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "tFbRg3v7QLB",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "IDS data capture",
+            "publicAccess": "rw------",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "rw------",
+                "userGroups": {},
+                "users": {}
+            },
+            "translations": [],
             "user": {
                 "id": "vUeLeQMSwhN",
                 "name": "Admin WHO",
