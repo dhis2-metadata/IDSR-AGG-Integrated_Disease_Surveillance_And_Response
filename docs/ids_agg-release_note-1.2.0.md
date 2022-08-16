@@ -8,6 +8,8 @@ New **validation rules** , **validation rule groups** [IDS `OEfzRCqPEK`] and **v
 
 New **dataset** for weekly population data [Population (weekly) `zTU6UZXtgwR`]. The 'Population (weekly) data set is used as part of the IDS package to provide population denominators for surveillance indicators that are monitored & analyzed on a weekly basis, such weekly incidence rates that can trigger outbreak alerts. While the dataset is generic and can be re-used to provide denominators for other programs conducting weekly data collection/monitoring, it is most typically used in the surveillance use case and therefore added to the package. By default, the dataset is assigned at Level 3 representing 'districts' in the package dev environment and can be modified. 
 
+New **indicator** [IDS - Incidence rate of measles (confirmed cases), O3FS25ICj7i] used for analysis in triangulation dashboards comparing disease surveillance and immunization program data. 
+
 Added **user group** for data capture [IDS data capture `tFbRg3v7QLB`]. This user group is assigned capture access to the IDS datasets.
 
 ## Fixes & Improvements
