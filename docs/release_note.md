@@ -1,8 +1,10 @@
-# Integrated Disease Surveillance - Release Note - 1.2.0
+# Release Note
+
+## 1.2.0
 
 A new version (1.2.0) of the aggregate Integrated Disease Surveillance (IDS) package has been released with new content, configuration fixes and improvements. These are summarized below. 
 
-## New Content
+### New Content
 
 New **validation rules** , **validation rule groups** [IDS `OEfzRCqPEK`] and **validation notifications templates** have been been added. The validation notifications have been configured to send outbreak alerts to user groups according to validation rules that define the outbreak threshold. Validation notification templates have been configured for each outbreak alert with a customized message that can be further localized during implementation. 
 
@@ -12,7 +14,7 @@ New **indicator** [IDS - Incidence rate of measles (confirmed cases), O3FS25ICj7
 
 Added **user group** for data capture [IDS data capture `tFbRg3v7QLB`]. This user group is assigned capture access to the IDS datasets.
 
-## Fixes & Improvements
+### Fixes & Improvements
 
 Object **names** and **codes** have been updated to fix spelling errors in the aggregate data entry form and align with standard recommended DHIS2 naming conventions and for consistency with internal metadata coding practices. Relevant object and code prefixes have been updated with 'IDS' to facilitate metadata management. 
 
