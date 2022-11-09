@@ -1,6 +1,6 @@
 # IDS - Integrated Disease Surveillance Installation Guide { #ids-agg-installation }
 
-This document includes an installation guide for the IDSR aggregate package.
+This document includes an installation guide for the IDS aggregate package.
 
 System default language: English
 
