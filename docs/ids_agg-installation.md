@@ -1,4 +1,4 @@
-# IDS - Integrated Disease Surveillance Installation Guide { #ids-installation }
+# IDS - Integrated Disease Surveillance Installation Guide { #ids-agg-installation }
 
 This document includes an installation guide for the IDSR aggregate package.
 
