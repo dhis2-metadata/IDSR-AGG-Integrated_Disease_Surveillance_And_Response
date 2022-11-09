@@ -1,4 +1,4 @@
-# Release Note
+# Release Note { #ids-agg-release-note }
 
 ## 1.2.0
 
