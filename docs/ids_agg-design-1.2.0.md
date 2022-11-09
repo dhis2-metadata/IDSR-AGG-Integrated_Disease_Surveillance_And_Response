@@ -1,4 +1,4 @@
-# Integrated Disease Surveillance aggregate system design { #ids-aggregate-design }
+# Integrated Disease Surveillance aggregate system design { #ids-agg-design-120 }
 
 ## Introduction
 
