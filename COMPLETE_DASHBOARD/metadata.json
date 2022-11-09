@@ -5703,22 +5703,22 @@
                     "id": "ktqMNXwts5h"
                 },
                 {
-                    "id": "HjOxL3tDqEf"
-                },
-                {
                     "id": "olyDHtjqsVu"
                 },
                 {
                     "id": "hKxdzxZ4WFX"
                 },
                 {
+                    "id": "HjOxL3tDqEf"
+                },
+                {
                     "id": "hdZoVVTIqAB"
                 },
                 {
-                    "id": "Mu8LJAdYrfq"
+                    "id": "npjj2Mylye8"
                 },
                 {
-                    "id": "npjj2Mylye8"
+                    "id": "Mu8LJAdYrfq"
                 },
                 {
                     "id": "CmQc4v3pzdU"
@@ -5772,22 +5772,22 @@
                     "id": "A52AlgcaCEN"
                 },
                 {
-                    "id": "nn2oCQFZTTc"
-                },
-                {
                     "id": "xtky4S0uHGJ"
                 },
                 {
-                    "id": "FS6Ml4vHa4P"
+                    "id": "nn2oCQFZTTc"
                 },
                 {
                     "id": "ziFf0topvdC"
                 },
                 {
-                    "id": "TFyvFrMIGYz"
+                    "id": "FS6Ml4vHa4P"
                 },
                 {
                     "id": "bsDMS2hPESS"
+                },
+                {
+                    "id": "TFyvFrMIGYz"
                 },
                 {
                     "id": "foIT9ImHcrf"
@@ -5820,10 +5820,10 @@
                     "id": "vav3peUGYbC"
                 },
                 {
-                    "id": "lMRuY8KHVKP"
+                    "id": "GRC7Xyb28sn"
                 },
                 {
-                    "id": "GRC7Xyb28sn"
+                    "id": "lMRuY8KHVKP"
                 },
                 {
                     "id": "mQUiCSlNSVh"
@@ -5901,37 +5901,37 @@
                     "id": "THePwVUy8OG"
                 },
                 {
+                    "id": "VT7WZlgGtx0"
+                },
+                {
                     "id": "x5GM3sHY4TJ"
                 },
                 {
                     "id": "TzYSEXFpeD5"
                 },
                 {
-                    "id": "VT7WZlgGtx0"
-                },
-                {
                     "id": "oJR70uNhjpc"
-                },
-                {
-                    "id": "aH6fYtpH2sA"
                 },
                 {
                     "id": "Gazfp4C0d0g"
                 },
                 {
-                    "id": "eEZeT2DGN8J"
+                    "id": "aH6fYtpH2sA"
                 },
                 {
                     "id": "hQlQCMJVGm5"
                 },
                 {
-                    "id": "nmZflUxmA7x"
+                    "id": "eEZeT2DGN8J"
+                },
+                {
+                    "id": "ffNQctZ9uxd"
                 },
                 {
                     "id": "HpCrcujsxpP"
                 },
                 {
-                    "id": "ffNQctZ9uxd"
+                    "id": "nmZflUxmA7x"
                 },
                 {
                     "id": "ndbZtM8GymS"
@@ -5952,10 +5952,10 @@
                     "id": "kZvqLqzBPGK"
                 },
                 {
-                    "id": "QYI4OsZ0MXt"
+                    "id": "PJIL3Utok2F"
                 },
                 {
-                    "id": "PJIL3Utok2F"
+                    "id": "QYI4OsZ0MXt"
                 },
                 {
                     "id": "aEQUwXmLNwz"
@@ -5967,10 +5967,10 @@
                     "id": "lp0Vd00vsJc"
                 },
                 {
-                    "id": "hxWZo7jVGv6"
+                    "id": "RKRtOnjvzsZ"
                 },
                 {
-                    "id": "RKRtOnjvzsZ"
+                    "id": "hxWZo7jVGv6"
                 },
                 {
                     "id": "Bhq0SYV7mDQ"
@@ -5979,10 +5979,10 @@
                     "id": "j33w6nNEKnL"
                 },
                 {
-                    "id": "Ndl0LCYzQyy"
+                    "id": "uYw7H8L6Zme"
                 },
                 {
-                    "id": "uYw7H8L6Zme"
+                    "id": "Ndl0LCYzQyy"
                 },
                 {
                     "id": "z5jMXJUjwE3"
@@ -6060,10 +6060,10 @@
                     "id": "SDTCkYf3yty"
                 },
                 {
-                    "id": "YAZFjSM05TX"
+                    "id": "K5SVUv3lStz"
                 },
                 {
-                    "id": "K5SVUv3lStz"
+                    "id": "YAZFjSM05TX"
                 },
                 {
                     "id": "rbnCYeVsf99"
@@ -6344,14 +6344,14 @@
                     "value": "نسبة"
                 },
                 {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "Pourcentage"
-                },
-                {
                     "locale": "ar_IQ",
                     "property": "NAME",
                     "value": "نسبة"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Pourcentage"
                 },
                 {
                     "locale": "es",
@@ -6384,14 +6384,14 @@
                     "value": "Por 100"
                 },
                 {
-                    "locale": "pt_BR",
-                    "property": "NAME",
-                    "value": "Percentagem"
-                },
-                {
                     "locale": "ru",
                     "property": "NAME",
                     "value": "Процент"
+                },
+                {
+                    "locale": "pt_BR",
+                    "property": "NAME",
+                    "value": "Percentagem"
                 },
                 {
                     "locale": "ar",
@@ -9148,8 +9148,8 @@
             "translations": [],
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": []
@@ -20241,6 +20241,25 @@
             "legends": [
                 {
                     "attributeValues": [],
+                    "color": "#f1eef6",
+                    "endValue": 0.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "UOju4HaZLjt",
+                    "name": "Less than 0",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": -1000.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
                     "color": "#ce1256",
                     "endValue": 100000.0,
                     "externalAccess": false,
@@ -20273,25 +20292,6 @@
                         "users": {}
                     },
                     "startValue": 0.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
-                    "color": "#f1eef6",
-                    "endValue": 0.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "UOju4HaZLjt",
-                    "name": "Less than 0",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": -1000.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -20348,25 +20348,6 @@
             "legends": [
                 {
                     "attributeValues": [],
-                    "color": "#0087FF",
-                    "endValue": 1.0,
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "b2V4H4D3Bpm",
-                    "name": "0-1",
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "startValue": 0.0,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
-                    "attributeValues": [],
                     "color": "#DF202B",
                     "endValue": 1000000.0,
                     "externalAccess": false,
@@ -20380,6 +20361,25 @@
                         "users": {}
                     },
                     "startValue": 1.0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "attributeValues": [],
+                    "color": "#0087FF",
+                    "endValue": 1.0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "b2V4H4D3Bpm",
+                    "name": "0-1",
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "startValue": 0.0,
                     "translations": [],
                     "userAccesses": [],
                     "userGroupAccesses": []
@@ -35157,7 +35157,7 @@
         "DHIS2Version": "2.37.7.1",
         "code": "IDS_AGG",
         "description": "Integrated Disease Surveillance (dashboard)",
-        "lastUpdated": "20220720T065621",
+        "lastUpdated": "20221107T135311",
         "locale": "en",
         "name": "IDS_AGG_DSH_DHIS2.37.7.1-en",
         "type": "DSH",
@@ -35190,8 +35190,8 @@
             ],
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -35223,8 +35223,8 @@
             ],
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -35256,8 +35256,8 @@
             ],
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -35283,12 +35283,49 @@
             "translations": [],
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
             "users": []
+        }
+    ],
+    "userRoles": [
+        {
+            "attributeValues": [],
+            "authorities": [],
+            "externalAccess": false,
+            "favorite": false,
+            "id": "nCNR71ZbTHK",
+            "name": "Package User Role",
+            "publicAccess": "rw------",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "rw------",
+                "userGroups": {},
+                "users": {}
+            },
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Rôle d'utilisateur du package"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "name": "package admin",
+                "username": "package_admin"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": [
+                {
+                    "id": "vUeLeQMSwhN"
+                }
+            ]
         }
     ],
     "users": [
@@ -35323,7 +35360,7 @@
                 "invitation": false,
                 "lastLogin": "2020-04-23T09:17:46.912",
                 "name": "package admin",
-                "passwordLastUpdated": "2019-10-16T12:06:30.668",
+                "passwordLastUpdated": "2022-08-17T12:56:38.395",
                 "selfRegistered": false,
                 "sharing": {
                     "external": false,
@@ -35332,6 +35369,12 @@
                 },
                 "translations": [],
                 "twoFA": false,
+                "user": {
+                    "displayName": "Robot Admin",
+                    "id": "vWK2xFwRIUX",
+                    "name": "Robot Admin",
+                    "username": "robot"
+                },
                 "userAccesses": [],
                 "userGroupAccesses": [],
                 "userInfo": {
@@ -35339,7 +35382,7 @@
                 },
                 "userRoles": [
                     {
-                        "id": "yrB6vc5Ip3r"
+                        "id": "nCNR71ZbTHK"
                     }
                 ],
                 "username": "package_admin"
@@ -38885,8 +38928,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -42572,8 +42615,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -42974,8 +43017,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -43309,8 +43352,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -43477,8 +43520,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
@@ -44651,8 +44694,8 @@
             "type": "PIVOT_TABLE",
             "user": {
                 "id": "vUeLeQMSwhN",
-                "name": "Admin WHO",
-                "username": "who"
+                "name": "package admin",
+                "username": "package_admin"
             },
             "userAccesses": [],
             "userGroupAccesses": [],
