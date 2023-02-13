@@ -20,7 +20,7 @@ Object **names** and **codes** have been updated to fix spelling errors in the a
 
 **Data entry forms** and html code used for custom forms have been updated, cleaned code and made translatable for the following **data sets**
 
-- IDS - Report: Suspected, Confirm, Death `ZyZmZTUwctj`
+- IDS - Report: Suspected, Confirmed, Death `ZyZmZTUwctj`
 - IDS - Report: Suspected, Death `m9yPuQEqxmS`
 - IDS - Aggregate Lab Weekly Report `OTvkNTijYQY`
 
