@@ -6,7 +6,7 @@
 
 ## Design
 
-- [Version 1.2.0](#ids-agg-design-120)
+- [Version 1.2.0](#ids-agg-design)
 
 ## Installation
 
